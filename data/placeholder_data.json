@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "data_source": "placeholder",
+    "warning": "Every number and molecule list in this file is a stand-in. Replace with real FlavorDB data (Lesson 7). The output carries data_source: placeholder so nobody mistakes it for science."
+  },
+  "ingredients": {
+    "sugar": {
+      "sweet_equiv_per_g": 1.0,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 1.0,
+      "sodium_mg_per_g": 0.0,
+      "fat_g_per_g": 0.0,
+      "molecules": ["sucrose", "glucose", "fructose"]
+    },
+    "salt": {
+      "sweet_equiv_per_g": 0.0,
+      "salty_equiv_per_g": 1.0,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 388.0,
+      "fat_g_per_g": 0.0,
+      "molecules": ["sodium_chloride"]
+    },
+    "butter": {
+      "sweet_equiv_per_g": 0.02,
+      "salty_equiv_per_g": 0.05,
+      "sugar_g_per_g": 0.001,
+      "sodium_mg_per_g": 6.43,
+      "fat_g_per_g": 0.81,
+      "molecules": ["diacetyl", "butyric_acid", "delta_decalactone", "acetoin"]
+    },
+    "heavy_cream": {
+      "sweet_equiv_per_g": 0.03,
+      "salty_equiv_per_g": 0.01,
+      "sugar_g_per_g": 0.028,
+      "sodium_mg_per_g": 0.38,
+      "fat_g_per_g": 0.37,
+      "molecules": ["diacetyl", "delta_decalactone", "butyric_acid", "vanillin"]
+    },
+    "lemon_juice": {
+      "sweet_equiv_per_g": 0.025,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.025,
+      "sodium_mg_per_g": 0.01,
+      "fat_g_per_g": 0.002,
+      "molecules": ["limonene", "citral", "linalool", "citric_acid"]
+    },
+    "tomato": {
+      "sweet_equiv_per_g": 0.03,
+      "salty_equiv_per_g": 0.005,
+      "sugar_g_per_g": 0.026,
+      "sodium_mg_per_g": 0.05,
+      "fat_g_per_g": 0.002,
+      "molecules": ["lycopene", "citric_acid", "glutamic_acid", "hexanal", "beta_ionone"]
+    },
+    "onion": {
+      "sweet_equiv_per_g": 0.04,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.042,
+      "sodium_mg_per_g": 0.04,
+      "fat_g_per_g": 0.001,
+      "molecules": ["dipropyl_disulfide", "thiopropanal_s_oxide", "allicin"]
+    },
+    "garlic": {
+      "sweet_equiv_per_g": 0.01,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.01,
+      "sodium_mg_per_g": 0.17,
+      "fat_g_per_g": 0.005,
+      "molecules": ["allicin", "diallyl_disulfide", "ajoene"]
+    },
+    "chicken_breast": {
+      "sweet_equiv_per_g": 0.0,
+      "salty_equiv_per_g": 0.02,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.74,
+      "fat_g_per_g": 0.036,
+      "molecules": ["glutamic_acid", "inosinic_acid"]
+    },
+    "vegetable_oil": {
+      "sweet_equiv_per_g": 0.0,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.0,
+      "fat_g_per_g": 1.0,
+      "molecules": ["linoleic_acid", "oleic_acid"]
+    },
+    "garam_masala": {
+      "sweet_equiv_per_g": 0.05,
+      "salty_equiv_per_g": 0.02,
+      "sugar_g_per_g": 0.04,
+      "sodium_mg_per_g": 0.2,
+      "fat_g_per_g": 0.05,
+      "molecules": ["eugenol", "cinnamaldehyde", "caryophyllene", "limonene", "linalool"]
+    },
+    "chili_powder": {
+      "sweet_equiv_per_g": 0.02,
+      "salty_equiv_per_g": 0.01,
+      "sugar_g_per_g": 0.07,
+      "sodium_mg_per_g": 2.61,
+      "fat_g_per_g": 0.14,
+      "molecules": ["capsaicin", "dihydrocapsaicin", "carotenoids"]
+    },
+    "water": {
+      "sweet_equiv_per_g": 0.0,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.0,
+      "fat_g_per_g": 0.0,
+      "molecules": []
+    },
+    "green_bell_pepper": {
+      "sweet_equiv_per_g": 0.026,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.025,
+      "sodium_mg_per_g": 0.03,
+      "fat_g_per_g": 0.002,
+      "molecules": ["pyrazine", "linalool", "hexanal"]
+    },
+
+    "vanilla_extract": {
+      "sweet_equiv_per_g": 2.0,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.09,
+      "fat_g_per_g": 0.001,
+      "molecules": ["vanillin", "guaiacol", "acetaldehyde", "linalool"],
+      "compensator_for": ["sweet"],
+      "fits": ["beverage", "dessert", "baking"],
+      "max_g": 3,
+      "caution": null
+    },
+    "cinnamon": {
+      "sweet_equiv_per_g": 1.2,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.1,
+      "fat_g_per_g": 0.01,
+      "molecules": ["cinnamaldehyde", "eugenol", "linalool", "coumarin"],
+      "compensator_for": ["sweet"],
+      "fits": ["dessert", "baking"],
+      "max_g": 3,
+      "caution": "Coumarin in cassia cinnamon may be a concern in large amounts."
+    },
+    "mint_leaves": {
+      "sweet_equiv_per_g": 0.5,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.3,
+      "fat_g_per_g": 0.007,
+      "molecules": ["menthol", "menthone", "limonene", "linalool"],
+      "compensator_for": ["sweet"],
+      "fits": ["beverage", "salad"],
+      "max_g": 5,
+      "caution": null
+    },
+    "tomato_paste": {
+      "sweet_equiv_per_g": 0.1,
+      "salty_equiv_per_g": 0.3,
+      "sugar_g_per_g": 0.04,
+      "sodium_mg_per_g": 1.8,
+      "fat_g_per_g": 0.005,
+      "molecules": ["lycopene", "glutamic_acid", "citric_acid", "hexanal", "beta_ionone", "furaneol"],
+      "compensator_for": ["salty"],
+      "fits": ["soup", "sauce", "curry", "stew"],
+      "max_g": 20,
+      "caution": null
+    },
+    "mushroom_powder": {
+      "sweet_equiv_per_g": 0.0,
+      "salty_equiv_per_g": 0.6,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.1,
+      "fat_g_per_g": 0.02,
+      "molecules": ["glutamic_acid", "guanylic_acid", "lenthionine", "1_octen_3_ol"],
+      "compensator_for": ["salty"],
+      "fits": ["soup", "sauce", "curry", "stew", "stir_fry"],
+      "max_g": 10,
+      "caution": null
+    },
+    "lemon_zest": {
+      "sweet_equiv_per_g": 0.1,
+      "salty_equiv_per_g": 0.15,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.06,
+      "fat_g_per_g": 0.003,
+      "molecules": ["limonene", "citral", "linalool", "geraniol", "citronellal"],
+      "compensator_for": ["salty", "sweet"],
+      "fits": ["beverage", "salad", "seafood", "sauce", "dessert"],
+      "max_g": 5,
+      "caution": null
+    },
+    "potassium_chloride": {
+      "sweet_equiv_per_g": 0.0,
+      "salty_equiv_per_g": 0.7,
+      "sugar_g_per_g": 0.0,
+      "sodium_mg_per_g": 0.0,
+      "fat_g_per_g": 0.0,
+      "molecules": [],
+      "compensator_for": ["salty"],
+      "fits": ["soup", "sauce", "curry", "stew", "baking", "stir_fry"],
+      "max_g": 3,
+      "caution": "Not suitable for people with kidney disease or on potassium-sparing medications."
+    },
+    "yogurt": {
+      "sweet_equiv_per_g": 0.03,
+      "salty_equiv_per_g": 0.02,
+      "sugar_g_per_g": 0.035,
+      "sodium_mg_per_g": 0.46,
+      "fat_g_per_g": 0.033,
+      "molecules": ["diacetyl", "acetaldehyde", "lactic_acid", "acetoin"],
+      "compensator_for": ["fat"],
+      "fits": ["curry", "sauce", "dressing", "dessert", "beverage"],
+      "max_g": 50,
+      "caution": null
+    },
+    "applesauce": {
+      "sweet_equiv_per_g": 0.1,
+      "salty_equiv_per_g": 0.0,
+      "sugar_g_per_g": 0.1,
+      "sodium_mg_per_g": 0.02,
+      "fat_g_per_g": 0.001,
+      "molecules": ["ethyl_butyrate", "hexanal", "linalool"],
+      "compensator_for": ["fat"],
+      "fits": ["baking", "dessert"],
+      "max_g": 60,
+      "caution": null
+    },
+    "stock_reduction": {
+      "sweet_equiv_per_g": 0.02,
+      "salty_equiv_per_g": 0.4,
+      "sugar_g_per_g": 0.005,
+      "sodium_mg_per_g": 3.5,
+      "fat_g_per_g": 0.01,
+      "molecules": ["glutamic_acid", "inosinic_acid", "guanylic_acid"],
+      "compensator_for": ["fat"],
+      "fits": ["soup", "sauce", "stew", "curry"],
+      "max_g": 30,
+      "caution": "Contains sodium; use low-sodium stock if reducing salt too."
+    }
+  },
+  "dishes": {
+    "lemonade": {
+      "ingredients": {
+        "sugar": 50,
+        "lemon_juice": 100,
+        "water": 500
+      },
+      "tags": ["beverage"]
+    },
+    "tomato_soup": {
+      "ingredients": {
+        "tomato": 400,
+        "onion": 100,
+        "garlic": 10,
+        "salt": 8,
+        "butter": 30,
+        "heavy_cream": 50,
+        "water": 500
+      },
+      "tags": ["soup", "sauce"]
+    },
+    "butter_chicken": {
+      "ingredients": {
+        "chicken_breast": 500,
+        "butter": 60,
+        "heavy_cream": 120,
+        "tomato": 300,
+        "onion": 150,
+        "garlic": 15,
+        "salt": 12,
+        "garam_masala": 10,
+        "chili_powder": 5,
+        "vegetable_oil": 30,
+        "water": 100
+      },
+      "tags": ["curry", "sauce"]
+    }
+  }
+}
