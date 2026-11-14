@@ -6,3 +6,4 @@ data/raw/
 data/cache.db
 .foodoscope_cache/
 .pytest_cache/
+data/local_api_credentials.json

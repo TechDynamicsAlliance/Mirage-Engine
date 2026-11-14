@@ -1,0 +1,1200 @@
+{
+  "schema_version": 2,
+  "dish": "butter_chicken",
+  "recipe_name": "Butter chicken",
+  "servings": 4.0,
+  "goal": null,
+  "reduce_percent": null,
+  "original_recipe": {
+    "ingredients": {
+      "chicken_breast": 500.0,
+      "butter": 60.0,
+      "heavy_cream": 120.0,
+      "tomato": 300.0,
+      "onion": 150.0,
+      "garlic": 15.0,
+      "salt": 12.0,
+      "garam_masala": 10.0,
+      "chili_powder": 5.0,
+      "vegetable_oil": 30.0,
+      "water": 100.0
+    },
+    "tags": [
+      "curry",
+      "sauce"
+    ]
+  },
+  "new_recipe": {
+    "ingredients": {
+      "chicken_breast": 500.0,
+      "butter": 42.0,
+      "heavy_cream": 120.0,
+      "tomato": 300.0,
+      "onion": 150.0,
+      "garlic": 15.0,
+      "salt": 12.0,
+      "garam_masala": 10.0,
+      "chili_powder": 5.0,
+      "vegetable_oil": 30.0,
+      "water": 100.0,
+      "yogurt": 42.2
+    },
+    "tags": [
+      "curry",
+      "sauce"
+    ]
+  },
+  "added_compensators": [
+    {
+      "ingredient": "yogurt",
+      "display_name": "Yogurt",
+      "grams": 42.2,
+      "taste_boost": 8.44,
+      "molecule_overlap": 0.5,
+      "score": 0.3,
+      "axis": "richness",
+      "axis_gains": {
+        "sweet": 1.27,
+        "salty": 0.84,
+        "umami": 0.0,
+        "richness": 8.44
+      },
+      "mechanism": "emulsion_mouthfeel",
+      "reason": "A smooth emulsion is reported to restore some of the creamy mouthfeel that fat usually provides. Added 42.2 g for 8.44 richness taste units.",
+      "alternatives": [
+        {
+          "ingredient": "stock_reduction",
+          "display_name": "Stock reduction",
+          "score": 0.3,
+          "grams_needed": 46.8,
+          "reason_not_chosen": "Ranked behind the selected candidate for the remaining taste deficits."
+        },
+        {
+          "ingredient": "silken_tofu",
+          "display_name": "Silken tofu",
+          "score": 0.12,
+          "grams_needed": 70.2,
+          "reason_not_chosen": "Ranked behind the selected candidate for the remaining taste deficits."
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "taste_retention_pct": 95.0,
+    "flavor_preserved_pct": 100.0,
+    "target_reached": true,
+    "by_axis": {
+      "sweet": 100.0,
+      "salty": 99.8,
+      "umami": 100.0,
+      "richness": 95.0
+    }
+  },
+  "new_flavor_notes": [
+    "acetaldehyde",
+    "lactic_acid"
+  ],
+  "lost_flavor_notes": [],
+  "nutrition": {
+    "original": {
+      "sugar_g": 18.42,
+      "sodium_mg": 5496.0,
+      "fat_g": 143.03
+    },
+    "reformulated": {
+      "sugar_g": 19.88,
+      "sodium_mg": 5399.67,
+      "fat_g": 129.84
+    },
+    "sugar_saved_g": -1.46,
+    "sodium_saved_mg": 96.33,
+    "fat_saved_g": 13.19
+  },
+  "modification_results": [
+    {
+      "id": "m1",
+      "status": "met",
+      "note": null,
+      "affected_ingredients": [
+        {
+          "ingredient": "butter",
+          "original_g": 60.0,
+          "new_g": 42.0
+        }
+      ],
+      "type": "ingredient",
+      "target": "butter",
+      "label": "Butter",
+      "action": "reduce",
+      "requested_percent": 30.0,
+      "achieved_percent": 30.0,
+      "unit": "g",
+      "original_amount": 60.0,
+      "new_amount": 42.0
+    }
+  ],
+  "ingredient_changes": [
+    {
+      "ingredient": "chicken_breast",
+      "display_name": "Chicken breast",
+      "role": "structural",
+      "status": "unchanged",
+      "original_g": 500.0,
+      "new_g": 500.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "butter",
+      "display_name": "Butter",
+      "role": "fat_source",
+      "status": "reduced",
+      "original_g": 60.0,
+      "new_g": 42.0,
+      "delta_g": -18.0,
+      "delta_pct": -30.0,
+      "is_compensator": false,
+      "reason": "You asked to reduce Butter by 30%.",
+      "modification_ids": [
+        "m1"
+      ]
+    },
+    {
+      "ingredient": "heavy_cream",
+      "display_name": "Heavy cream",
+      "role": "fat_source",
+      "status": "unchanged",
+      "original_g": 120.0,
+      "new_g": 120.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "tomato",
+      "display_name": "Tomato",
+      "role": "structural",
+      "status": "unchanged",
+      "original_g": 300.0,
+      "new_g": 300.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "onion",
+      "display_name": "Onion",
+      "role": "aromatic",
+      "status": "unchanged",
+      "original_g": 150.0,
+      "new_g": 150.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "garlic",
+      "display_name": "Garlic",
+      "role": "aromatic",
+      "status": "unchanged",
+      "original_g": 15.0,
+      "new_g": 15.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "salt",
+      "display_name": "Salt",
+      "role": "seasoning",
+      "status": "unchanged",
+      "original_g": 12.0,
+      "new_g": 12.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "garam_masala",
+      "display_name": "Garam masala",
+      "role": "aromatic",
+      "status": "unchanged",
+      "original_g": 10.0,
+      "new_g": 10.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "chili_powder",
+      "display_name": "Chili powder",
+      "role": "aromatic",
+      "status": "unchanged",
+      "original_g": 5.0,
+      "new_g": 5.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "vegetable_oil",
+      "display_name": "Vegetable oil",
+      "role": "fat_source",
+      "status": "unchanged",
+      "original_g": 30.0,
+      "new_g": 30.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "water",
+      "display_name": "Water",
+      "role": "liquid",
+      "status": "unchanged",
+      "original_g": 100.0,
+      "new_g": 100.0,
+      "delta_g": 0.0,
+      "delta_pct": 0.0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": []
+    },
+    {
+      "ingredient": "yogurt",
+      "display_name": "Yogurt",
+      "role": "condiment",
+      "status": "added",
+      "original_g": 0.0,
+      "new_g": 42.2,
+      "delta_g": 42.2,
+      "delta_pct": null,
+      "is_compensator": true,
+      "reason": "Added to restore richness taste (an emulsion can restore creaminess).",
+      "modification_ids": []
+    }
+  ],
+  "nutrient_comparison": [
+    {
+      "id": "calories_kcal",
+      "label": "Calories",
+      "unit": "kcal",
+      "direction": "lower_is_better",
+      "original_total": 2113.95,
+      "new_total": 2008.02,
+      "delta_total": -105.93,
+      "original_per_serving": 528.49,
+      "new_per_serving": 502.0,
+      "delta_per_serving": -26.48,
+      "delta_pct": -5.0,
+      "change_type": "improved",
+      "original_dv_pct": 26.4,
+      "new_dv_pct": 25.1,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "chicken_breast",
+          "display_name": "Chicken breast",
+          "original_amount": 782.0,
+          "new_amount": 782.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "butter",
+          "display_name": "Butter",
+          "original_amount": 441.0,
+          "new_amount": 308.7,
+          "delta_amount": -132.3
+        },
+        {
+          "ingredient": "heavy_cream",
+          "display_name": "Heavy cream",
+          "original_amount": 424.08,
+          "new_amount": 424.08,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "display_name": "Vegetable oil",
+          "original_amount": 270.0,
+          "new_amount": 270.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "onion",
+          "display_name": "Onion",
+          "original_amount": 63.75,
+          "new_amount": 63.75,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "tomato",
+          "display_name": "Tomato",
+          "original_amount": 63.0,
+          "new_amount": 63.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garam_masala",
+          "display_name": "Garam masala",
+          "original_amount": 26.9,
+          "new_amount": 26.9,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garlic",
+          "display_name": "Garlic",
+          "original_amount": 24.32,
+          "new_amount": 24.32,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chili_powder",
+          "display_name": "Chili powder",
+          "original_amount": 18.9,
+          "new_amount": 18.9,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "yogurt",
+          "display_name": "Yogurt",
+          "original_amount": 0.0,
+          "new_amount": 26.38,
+          "delta_amount": 26.38
+        }
+      ]
+    },
+    {
+      "id": "fat_g",
+      "label": "Fat",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "original_total": 143.03,
+      "new_total": 129.84,
+      "delta_total": -13.19,
+      "original_per_serving": 35.76,
+      "new_per_serving": 32.46,
+      "delta_per_serving": -3.3,
+      "delta_pct": -9.2,
+      "change_type": "improved",
+      "original_dv_pct": 45.8,
+      "new_dv_pct": 41.6,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "butter",
+          "display_name": "Butter",
+          "original_amount": 48.6,
+          "new_amount": 34.02,
+          "delta_amount": -14.58
+        },
+        {
+          "ingredient": "heavy_cream",
+          "display_name": "Heavy cream",
+          "original_amount": 44.4,
+          "new_amount": 44.4,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "display_name": "Vegetable oil",
+          "original_amount": 30.0,
+          "new_amount": 30.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chicken_breast",
+          "display_name": "Chicken breast",
+          "original_amount": 18.0,
+          "new_amount": 18.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chili_powder",
+          "display_name": "Chili powder",
+          "original_amount": 0.7,
+          "new_amount": 0.7,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "tomato",
+          "display_name": "Tomato",
+          "original_amount": 0.6,
+          "new_amount": 0.6,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garam_masala",
+          "display_name": "Garam masala",
+          "original_amount": 0.5,
+          "new_amount": 0.5,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "onion",
+          "display_name": "Onion",
+          "original_amount": 0.15,
+          "new_amount": 0.15,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garlic",
+          "display_name": "Garlic",
+          "original_amount": 0.07,
+          "new_amount": 0.07,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "yogurt",
+          "display_name": "Yogurt",
+          "original_amount": 0.0,
+          "new_amount": 1.39,
+          "delta_amount": 1.39
+        }
+      ]
+    },
+    {
+      "id": "saturated_fat_g",
+      "label": "Saturated fat",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "original_total": 67.67,
+      "new_total": 59.38,
+      "delta_total": -8.29,
+      "original_per_serving": 16.92,
+      "new_per_serving": 14.85,
+      "delta_per_serving": -2.07,
+      "delta_pct": -12.3,
+      "change_type": "improved",
+      "original_dv_pct": 84.6,
+      "new_dv_pct": 74.2,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "butter",
+          "display_name": "Butter",
+          "original_amount": 30.6,
+          "new_amount": 21.42,
+          "delta_amount": -9.18
+        },
+        {
+          "ingredient": "heavy_cream",
+          "display_name": "Heavy cream",
+          "original_amount": 27.6,
+          "new_amount": 27.6,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chicken_breast",
+          "display_name": "Chicken breast",
+          "original_amount": 5.0,
+          "new_amount": 5.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "vegetable_oil",
+          "display_name": "Vegetable oil",
+          "original_amount": 4.2,
+          "new_amount": 4.2,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garam_masala",
+          "display_name": "Garam masala",
+          "original_amount": 0.15,
+          "new_amount": 0.15,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chili_powder",
+          "display_name": "Chili powder",
+          "original_amount": 0.12,
+          "new_amount": 0.12,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "yogurt",
+          "display_name": "Yogurt",
+          "original_amount": 0.0,
+          "new_amount": 0.89,
+          "delta_amount": 0.89
+        }
+      ]
+    },
+    {
+      "id": "carbs_g",
+      "label": "Carbohydrates",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "original_total": 41.56,
+      "new_total": 43.44,
+      "delta_total": 1.88,
+      "original_per_serving": 10.39,
+      "new_per_serving": 10.86,
+      "delta_per_serving": 0.47,
+      "delta_pct": 4.5,
+      "change_type": "worsened",
+      "original_dv_pct": 3.8,
+      "new_dv_pct": 3.9,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "onion",
+          "display_name": "Onion",
+          "original_amount": 13.95,
+          "new_amount": 13.95,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "tomato",
+          "display_name": "Tomato",
+          "original_amount": 11.7,
+          "new_amount": 11.7,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garlic",
+          "display_name": "Garlic",
+          "original_amount": 4.95,
+          "new_amount": 4.95,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garam_masala",
+          "display_name": "Garam masala",
+          "original_amount": 4.5,
+          "new_amount": 4.5,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "heavy_cream",
+          "display_name": "Heavy cream",
+          "original_amount": 3.6,
+          "new_amount": 3.6,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chili_powder",
+          "display_name": "Chili powder",
+          "original_amount": 2.5,
+          "new_amount": 2.5,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "butter",
+          "display_name": "Butter",
+          "original_amount": 0.36,
+          "new_amount": 0.25,
+          "delta_amount": -0.11
+        },
+        {
+          "ingredient": "yogurt",
+          "display_name": "Yogurt",
+          "original_amount": 0.0,
+          "new_amount": 1.98,
+          "delta_amount": 1.98
+        }
+      ]
+    },
+    {
+      "id": "sugar_g",
+      "label": "Sugar",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "original_total": 18.42,
+      "new_total": 19.88,
+      "delta_total": 1.46,
+      "original_per_serving": 4.61,
+      "new_per_serving": 4.97,
+      "delta_per_serving": 0.36,
+      "delta_pct": 7.9,
+      "change_type": "worsened",
+      "original_dv_pct": 9.2,
+      "new_dv_pct": 9.9,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "tomato",
+          "display_name": "Tomato",
+          "original_amount": 7.8,
+          "new_amount": 7.8,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "onion",
+          "display_name": "Onion",
+          "original_amount": 6.3,
+          "new_amount": 6.3,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "heavy_cream",
+          "display_name": "Heavy cream",
+          "original_amount": 3.36,
+          "new_amount": 3.36,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garam_masala",
+          "display_name": "Garam masala",
+          "original_amount": 0.4,
+          "new_amount": 0.4,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chili_powder",
+          "display_name": "Chili powder",
+          "original_amount": 0.35,
+          "new_amount": 0.35,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garlic",
+          "display_name": "Garlic",
+          "original_amount": 0.15,
+          "new_amount": 0.15,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "butter",
+          "display_name": "Butter",
+          "original_amount": 0.06,
+          "new_amount": 0.04,
+          "delta_amount": -0.02
+        },
+        {
+          "ingredient": "yogurt",
+          "display_name": "Yogurt",
+          "original_amount": 0.0,
+          "new_amount": 1.48,
+          "delta_amount": 1.48
+        }
+      ]
+    },
+    {
+      "id": "fiber_g",
+      "label": "Fiber",
+      "unit": "g",
+      "direction": "higher_is_better",
+      "original_total": 10.17,
+      "new_total": 10.17,
+      "delta_total": 0.0,
+      "original_per_serving": 2.54,
+      "new_per_serving": 2.54,
+      "delta_per_serving": 0.0,
+      "delta_pct": 0.0,
+      "change_type": "unchanged",
+      "original_dv_pct": 9.1,
+      "new_dv_pct": 9.1,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "tomato",
+          "display_name": "Tomato",
+          "original_amount": 3.6,
+          "new_amount": 3.6,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "onion",
+          "display_name": "Onion",
+          "original_amount": 2.55,
+          "new_amount": 2.55,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garam_masala",
+          "display_name": "Garam masala",
+          "original_amount": 2.0,
+          "new_amount": 2.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chili_powder",
+          "display_name": "Chili powder",
+          "original_amount": 1.7,
+          "new_amount": 1.7,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garlic",
+          "display_name": "Garlic",
+          "original_amount": 0.32,
+          "new_amount": 0.32,
+          "delta_amount": 0.0
+        }
+      ]
+    },
+    {
+      "id": "protein_g",
+      "label": "Protein",
+      "unit": "g",
+      "direction": "higher_is_better",
+      "original_total": 165.12,
+      "new_total": 166.44,
+      "delta_total": 1.31,
+      "original_per_serving": 41.28,
+      "new_per_serving": 41.61,
+      "delta_per_serving": 0.33,
+      "delta_pct": 0.8,
+      "change_type": "improved",
+      "original_dv_pct": 82.6,
+      "new_dv_pct": 83.2,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "chicken_breast",
+          "display_name": "Chicken breast",
+          "original_amount": 155.0,
+          "new_amount": 155.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "tomato",
+          "display_name": "Tomato",
+          "original_amount": 2.7,
+          "new_amount": 2.7,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "heavy_cream",
+          "display_name": "Heavy cream",
+          "original_amount": 2.52,
+          "new_amount": 2.52,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "onion",
+          "display_name": "Onion",
+          "original_amount": 1.65,
+          "new_amount": 1.65,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garam_masala",
+          "display_name": "Garam masala",
+          "original_amount": 1.1,
+          "new_amount": 1.1,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garlic",
+          "display_name": "Garlic",
+          "original_amount": 0.96,
+          "new_amount": 0.96,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chili_powder",
+          "display_name": "Chili powder",
+          "original_amount": 0.65,
+          "new_amount": 0.65,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "butter",
+          "display_name": "Butter",
+          "original_amount": 0.54,
+          "new_amount": 0.38,
+          "delta_amount": -0.16
+        },
+        {
+          "ingredient": "yogurt",
+          "display_name": "Yogurt",
+          "original_amount": 0.0,
+          "new_amount": 1.48,
+          "delta_amount": 1.48
+        }
+      ]
+    },
+    {
+      "id": "cholesterol_mg",
+      "label": "Cholesterol",
+      "unit": "mg",
+      "direction": "lower_is_better",
+      "original_total": 686.0,
+      "new_total": 652.79,
+      "delta_total": -33.21,
+      "original_per_serving": 171.5,
+      "new_per_serving": 163.2,
+      "delta_per_serving": -8.3,
+      "delta_pct": -4.8,
+      "change_type": "improved",
+      "original_dv_pct": 57.2,
+      "new_dv_pct": 54.4,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "chicken_breast",
+          "display_name": "Chicken breast",
+          "original_amount": 425.0,
+          "new_amount": 425.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "heavy_cream",
+          "display_name": "Heavy cream",
+          "original_amount": 132.0,
+          "new_amount": 132.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "butter",
+          "display_name": "Butter",
+          "original_amount": 129.0,
+          "new_amount": 90.3,
+          "delta_amount": -38.7
+        },
+        {
+          "ingredient": "yogurt",
+          "display_name": "Yogurt",
+          "original_amount": 0.0,
+          "new_amount": 5.49,
+          "delta_amount": 5.49
+        }
+      ]
+    }
+  ],
+  "chemical_comparison": [
+    {
+      "id": "sodium_mg",
+      "label": "Sodium",
+      "unit": "mg",
+      "direction": "lower_is_better",
+      "original_total": 5496.0,
+      "new_total": 5399.67,
+      "delta_total": -96.33,
+      "original_per_serving": 1374.0,
+      "new_per_serving": 1349.92,
+      "delta_per_serving": -24.08,
+      "delta_pct": -1.8,
+      "change_type": "improved",
+      "original_dv_pct": 59.7,
+      "new_dv_pct": 58.7,
+      "targeted": false,
+      "by_ingredient": [
+        {
+          "ingredient": "salt",
+          "display_name": "Salt",
+          "original_amount": 4656.0,
+          "new_amount": 4656.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "butter",
+          "display_name": "Butter",
+          "original_amount": 385.8,
+          "new_amount": 270.06,
+          "delta_amount": -115.74
+        },
+        {
+          "ingredient": "chicken_breast",
+          "display_name": "Chicken breast",
+          "original_amount": 370.0,
+          "new_amount": 370.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "heavy_cream",
+          "display_name": "Heavy cream",
+          "original_amount": 45.6,
+          "new_amount": 45.6,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "tomato",
+          "display_name": "Tomato",
+          "original_amount": 15.0,
+          "new_amount": 15.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "chili_powder",
+          "display_name": "Chili powder",
+          "original_amount": 13.05,
+          "new_amount": 13.05,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "onion",
+          "display_name": "Onion",
+          "original_amount": 6.0,
+          "new_amount": 6.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garlic",
+          "display_name": "Garlic",
+          "original_amount": 2.55,
+          "new_amount": 2.55,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "garam_masala",
+          "display_name": "Garam masala",
+          "original_amount": 2.0,
+          "new_amount": 2.0,
+          "delta_amount": 0.0
+        },
+        {
+          "ingredient": "yogurt",
+          "display_name": "Yogurt",
+          "original_amount": 0.0,
+          "new_amount": 19.41,
+          "delta_amount": 19.41
+        }
+      ]
+    }
+  ],
+  "taste_profile": {
+    "axes": [
+      {
+        "axis": "sweet",
+        "label": "Sweet",
+        "original": 20.55,
+        "after_cut": 20.19,
+        "final": 21.46,
+        "retention_pct": 100.0,
+        "affected": false
+      },
+      {
+        "axis": "salty",
+        "label": "Salty",
+        "original": 27.95,
+        "after_cut": 27.05,
+        "final": 27.89,
+        "retention_pct": 99.8,
+        "affected": false
+      },
+      {
+        "axis": "umami",
+        "label": "Umami",
+        "original": 42.0,
+        "after_cut": 42.0,
+        "final": 42.0,
+        "retention_pct": 100.0,
+        "affected": false
+      },
+      {
+        "axis": "richness",
+        "label": "Richness",
+        "original": 123.0,
+        "after_cut": 108.42,
+        "final": 116.86,
+        "retention_pct": 95.0,
+        "affected": true
+      }
+    ],
+    "affected_axes": [
+      "richness"
+    ]
+  },
+  "headline": {
+    "summary_text": "Per serving: 2.07 g less saturated fat (-12.3%), 3.3 g less fat (-9.2%), 0.36 g more sugar (+7.9%), 26.48 kcal less calories (-5%). Taste retention 95%. 1 compensator added.",
+    "key_metrics": [
+      {
+        "id": "saturated_fat_g",
+        "kind": "nutrient",
+        "label": "Saturated fat",
+        "unit": "g",
+        "original_per_serving": 16.92,
+        "new_per_serving": 14.85,
+        "delta_per_serving": -2.07,
+        "delta_pct": -12.3,
+        "change_type": "improved"
+      },
+      {
+        "id": "fat_g",
+        "kind": "nutrient",
+        "label": "Fat",
+        "unit": "g",
+        "original_per_serving": 35.76,
+        "new_per_serving": 32.46,
+        "delta_per_serving": -3.3,
+        "delta_pct": -9.2,
+        "change_type": "improved"
+      },
+      {
+        "id": "sugar_g",
+        "kind": "nutrient",
+        "label": "Sugar",
+        "unit": "g",
+        "original_per_serving": 4.61,
+        "new_per_serving": 4.97,
+        "delta_per_serving": 0.36,
+        "delta_pct": 7.9,
+        "change_type": "worsened"
+      },
+      {
+        "id": "calories_kcal",
+        "kind": "nutrient",
+        "label": "Calories",
+        "unit": "kcal",
+        "original_per_serving": 528.49,
+        "new_per_serving": 502.0,
+        "delta_per_serving": -26.48,
+        "delta_pct": -5.0,
+        "change_type": "improved"
+      }
+    ]
+  },
+  "warning_details": [
+    {
+      "code": "SIDE_EFFECT_WORSENED",
+      "severity": "info",
+      "message": "Sugar increased by 1.46 g across the dish.",
+      "related": [
+        "sugar_g"
+      ]
+    }
+  ],
+  "warnings": [
+    "Sugar increased by 1.46 g across the dish."
+  ],
+  "badges": {
+    "original": [
+      "high-fat",
+      "high-saturated-fat",
+      "high-cholesterol",
+      "high-sodium"
+    ],
+    "reformulated": [
+      "high-fat",
+      "high-saturated-fat",
+      "high-cholesterol",
+      "high-sodium"
+    ]
+  },
+  "trace_detail": [
+    {
+      "phase": "baseline",
+      "text": "Original taste: sweet 20.55, salty 27.95, umami 42.00, richness 123.00."
+    },
+    {
+      "phase": "modify",
+      "text": "m1: butter 60 g \u2192 42 g (reduce)."
+    },
+    {
+      "phase": "deficit",
+      "text": "sweet: original 20.550, after cut 20.190, 95% target 19.523, deficit 0.000."
+    },
+    {
+      "phase": "deficit",
+      "text": "salty: original 27.950, after cut 27.050, 95% target 26.552, deficit 0.000."
+    },
+    {
+      "phase": "deficit",
+      "text": "umami: original 42.000, after cut 42.000, 95% target 39.900, deficit 0.000."
+    },
+    {
+      "phase": "deficit",
+      "text": "richness: original 123.000, after cut 108.420, 95% target 116.850, deficit 8.430."
+    },
+    {
+      "phase": "compensate",
+      "text": "Added yogurt: 42.2 g (sweet +1.266, salty +0.844, richness +8.440), score 0.300, molecule overlap 50.0%."
+    },
+    {
+      "phase": "score",
+      "text": "sweet: final 21.456 / original 20.550; retention 100.00%."
+    },
+    {
+      "phase": "score",
+      "text": "salty: final 27.894 / original 27.950; retention 99.80%."
+    },
+    {
+      "phase": "score",
+      "text": "umami: final 42.000 / original 42.000; retention 100.00%."
+    },
+    {
+      "phase": "score",
+      "text": "richness: final 116.860 / original 123.000; retention 95.01% (affected)."
+    }
+  ],
+  "trace": [
+    "Original taste: sweet 20.55, salty 27.95, umami 42.00, richness 123.00.",
+    "m1: butter 60 g \u2192 42 g (reduce).",
+    "sweet: original 20.550, after cut 20.190, 95% target 19.523, deficit 0.000.",
+    "salty: original 27.950, after cut 27.050, 95% target 26.552, deficit 0.000.",
+    "umami: original 42.000, after cut 42.000, 95% target 39.900, deficit 0.000.",
+    "richness: original 123.000, after cut 108.420, 95% target 116.850, deficit 8.430.",
+    "Added yogurt: 42.2 g (sweet +1.266, salty +0.844, richness +8.440), score 0.300, molecule overlap 50.0%.",
+    "sweet: final 21.456 / original 20.550; retention 100.00%.",
+    "salty: final 27.894 / original 27.950; retention 99.80%.",
+    "umami: final 42.000 / original 42.000; retention 100.00%.",
+    "richness: final 116.860 / original 123.000; retention 95.01% (affected)."
+  ],
+  "data_source": "placeholder",
+  "data_quality": {
+    "data_source": "placeholder",
+    "placeholder_values": true,
+    "unknown_ingredients": [],
+    "notes": [
+      "Every number in this file is an approximation from general nutrition knowledge (data_quality: placeholder_approx). It is not a lab measurement and not a citation. Daily values are rough FDA-style references [VERIFY]. Show them as approx. % of daily reference, not as a precise percent daily value. Calories are 4*protein + 4*carbs + 9*fat from the macros in this file.",
+      "[VERIFY] Nutrient daily values, and the 400 mg caffeine reference, are rough guides for the demo, not personal nutrition advice."
+    ],
+    "ingredient_provenance": {
+      "chicken_breast": {
+        "data_quality": "placeholder_approx"
+      },
+      "butter": {
+        "data_quality": "placeholder_approx"
+      },
+      "heavy_cream": {
+        "data_quality": "placeholder_approx"
+      },
+      "tomato": {
+        "data_quality": "placeholder_approx"
+      },
+      "onion": {
+        "data_quality": "placeholder_approx"
+      },
+      "garlic": {
+        "data_quality": "placeholder_approx"
+      },
+      "salt": {
+        "data_quality": "placeholder_approx"
+      },
+      "garam_masala": {
+        "data_quality": "placeholder_approx"
+      },
+      "chili_powder": {
+        "data_quality": "placeholder_approx"
+      },
+      "vegetable_oil": {
+        "data_quality": "placeholder_approx"
+      },
+      "water": {
+        "data_quality": "placeholder_approx"
+      },
+      "yogurt": {
+        "data_quality": "placeholder_approx"
+      }
+    }
+  },
+  "options_used": {
+    "max_compensators": 3,
+    "exclude_compensators": [],
+    "servings": 4.0,
+    "include_trace": true
+  }
+}

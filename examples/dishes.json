@@ -1,0 +1,265 @@
+[
+  {
+    "dish": "lemonade",
+    "goals": [
+      "sugar",
+      "fat"
+    ],
+    "ingredients": [
+      "sugar",
+      "lemon_juice",
+      "water"
+    ],
+    "display_name": "Lemonade",
+    "servings": 4.0,
+    "tags": [
+      "beverage"
+    ],
+    "badges": [
+      "high-sugar"
+    ],
+    "baseline": {
+      "calories_kcal_per_serving": 57.75,
+      "sodium_mg_per_serving": 0.25,
+      "sugar_g_per_serving": 13.12,
+      "fat_g_per_serving": 0.05
+    }
+  },
+  {
+    "dish": "tomato_soup",
+    "goals": [
+      "salt",
+      "fat"
+    ],
+    "ingredients": [
+      "tomato",
+      "onion",
+      "garlic",
+      "salt",
+      "butter",
+      "heavy_cream",
+      "water"
+    ],
+    "display_name": "Tomato soup",
+    "servings": 4.0,
+    "tags": [
+      "soup",
+      "sauce"
+    ],
+    "badges": [
+      "high-saturated-fat",
+      "high-sodium"
+    ],
+    "baseline": {
+      "calories_kcal_per_serving": 134.98,
+      "sodium_mg_per_serving": 835.4,
+      "sugar_g_per_serving": 4.03,
+      "fat_g_per_serving": 10.94
+    }
+  },
+  {
+    "dish": "butter_chicken",
+    "goals": [
+      "salt",
+      "fat"
+    ],
+    "ingredients": [
+      "chicken_breast",
+      "butter",
+      "heavy_cream",
+      "tomato",
+      "onion",
+      "garlic",
+      "salt",
+      "garam_masala",
+      "chili_powder",
+      "vegetable_oil",
+      "water"
+    ],
+    "display_name": "Butter chicken",
+    "servings": 4.0,
+    "tags": [
+      "curry",
+      "sauce"
+    ],
+    "badges": [
+      "high-fat",
+      "high-saturated-fat",
+      "high-cholesterol",
+      "high-sodium"
+    ],
+    "baseline": {
+      "calories_kcal_per_serving": 528.49,
+      "sodium_mg_per_serving": 1374.0,
+      "sugar_g_per_serving": 4.61,
+      "fat_g_per_serving": 35.76
+    }
+  },
+  {
+    "dish": "chicken_curry",
+    "goals": [
+      "salt",
+      "fat"
+    ],
+    "ingredients": [
+      "chicken_breast",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "vegetable_oil",
+      "salt",
+      "turmeric",
+      "cumin",
+      "coriander_powder",
+      "chili_powder",
+      "water"
+    ],
+    "display_name": "Chicken curry",
+    "servings": 4.0,
+    "tags": [
+      "curry",
+      "stew"
+    ],
+    "badges": [
+      "high-cholesterol",
+      "high-sodium"
+    ],
+    "baseline": {
+      "calories_kcal_per_serving": 280.02,
+      "sodium_mg_per_serving": 868.66,
+      "sugar_g_per_serving": 3.08,
+      "fat_g_per_serving": 11.0
+    }
+  },
+  {
+    "dish": "chocolate_cake",
+    "goals": [
+      "sugar",
+      "salt",
+      "fat"
+    ],
+    "ingredients": [
+      "flour",
+      "sugar",
+      "cocoa_powder",
+      "butter",
+      "egg",
+      "milk",
+      "baking_powder",
+      "salt"
+    ],
+    "display_name": "Chocolate cake",
+    "servings": 8.0,
+    "tags": [
+      "dessert",
+      "baking"
+    ],
+    "badges": [
+      "high-saturated-fat",
+      "high-sugar",
+      "high-cholesterol"
+    ],
+    "baseline": {
+      "calories_kcal_per_serving": 296.61,
+      "sodium_mg_per_serving": 270.48,
+      "sugar_g_per_serving": 19.75,
+      "fat_g_per_serving": 12.79
+    }
+  },
+  {
+    "dish": "caesar_dressing",
+    "goals": [
+      "salt",
+      "fat"
+    ],
+    "ingredients": [
+      "olive_oil",
+      "egg_yolk",
+      "parmesan",
+      "lemon_juice",
+      "garlic",
+      "anchovy",
+      "dijon_mustard",
+      "salt",
+      "black_pepper"
+    ],
+    "display_name": "Caesar dressing",
+    "servings": 4.0,
+    "tags": [
+      "salad",
+      "dressing"
+    ],
+    "badges": [
+      "high-fat",
+      "high-saturated-fat",
+      "high-cholesterol"
+    ],
+    "baseline": {
+      "calories_kcal_per_serving": 244.04,
+      "sodium_mg_per_serving": 422.37,
+      "sugar_g_per_serving": 0.21,
+      "fat_g_per_serving": 24.33
+    }
+  },
+  {
+    "dish": "instant_noodles",
+    "goals": [
+      "fat"
+    ],
+    "ingredients": [
+      "instant_noodle_cake",
+      "seasoning_sachet",
+      "palm_oil",
+      "water"
+    ],
+    "display_name": "Instant noodles",
+    "servings": 1.0,
+    "tags": [
+      "noodle",
+      "packaged"
+    ],
+    "badges": [
+      "high-fat",
+      "high-saturated-fat",
+      "high-sodium"
+    ],
+    "baseline": {
+      "calories_kcal_per_serving": 376.64,
+      "sodium_mg_per_serving": 1627.5,
+      "sugar_g_per_serving": 2.46,
+      "fat_g_per_serving": 16.32
+    }
+  },
+  {
+    "dish": "ham_cheese_sandwich",
+    "goals": [
+      "fat"
+    ],
+    "ingredients": [
+      "bread",
+      "ham",
+      "cheddar",
+      "butter",
+      "dijon_mustard"
+    ],
+    "display_name": "Ham and cheese sandwich",
+    "servings": 1.0,
+    "tags": [
+      "sandwich",
+      "bread"
+    ],
+    "badges": [
+      "high-fat",
+      "high-saturated-fat",
+      "high-cholesterol",
+      "high-sodium"
+    ],
+    "baseline": {
+      "calories_kcal_per_serving": 467.36,
+      "sodium_mg_per_serving": 1326.44,
+      "sugar_g_per_serving": 5.07,
+      "fat_g_per_serving": 23.6
+    }
+  }
+]

@@ -1,0 +1,1086 @@
+{
+  "recipe": {
+    "dish": "butter_chicken",
+    "name": "Butter chicken",
+    "servings": 4.0,
+    "tags": [
+      "curry",
+      "sauce"
+    ],
+    "ingredients": {
+      "chicken_breast": 500.0,
+      "butter": 60.0,
+      "heavy_cream": 120.0,
+      "tomato": 300.0,
+      "onion": 150.0,
+      "garlic": 15.0,
+      "salt": 12.0,
+      "garam_masala": 10.0,
+      "chili_powder": 5.0,
+      "vegetable_oil": 30.0,
+      "water": 100.0
+    },
+    "core_ingredients": [
+      "chicken_breast"
+    ],
+    "unresolved_ingredients": []
+  },
+  "totals": {
+    "nutrients": {
+      "calories_kcal": 2113.95,
+      "fat_g": 143.03,
+      "saturated_fat_g": 67.67,
+      "carbs_g": 41.56,
+      "sugar_g": 18.42,
+      "fiber_g": 10.17,
+      "protein_g": 165.12,
+      "cholesterol_mg": 686.0
+    },
+    "chemicals": {
+      "sodium_mg": 5496.0,
+      "msg_g": 0.0,
+      "sodium_benzoate_mg": 0.0,
+      "sodium_nitrite_mg": 0.0,
+      "tartrazine_mg": 0.0,
+      "caffeine_mg": 0.0
+    }
+  },
+  "per_serving": {
+    "nutrients": {
+      "calories_kcal": 528.49,
+      "fat_g": 35.76,
+      "saturated_fat_g": 16.92,
+      "carbs_g": 10.39,
+      "sugar_g": 4.61,
+      "fiber_g": 2.54,
+      "protein_g": 41.28,
+      "cholesterol_mg": 171.5
+    },
+    "chemicals": {
+      "sodium_mg": 1374.0,
+      "msg_g": 0.0,
+      "sodium_benzoate_mg": 0.0,
+      "sodium_nitrite_mg": 0.0,
+      "tartrazine_mg": 0.0,
+      "caffeine_mg": 0.0
+    }
+  },
+  "contributions": {
+    "nutrients": {
+      "calories_kcal": {
+        "chicken_breast": 782.0,
+        "butter": 441.0,
+        "heavy_cream": 424.08,
+        "tomato": 63.0,
+        "onion": 63.75,
+        "garlic": 24.315,
+        "salt": 0.0,
+        "garam_masala": 26.9,
+        "chili_powder": 18.9,
+        "vegetable_oil": 270.0,
+        "water": 0.0
+      },
+      "fat_g": {
+        "chicken_breast": 18.0,
+        "butter": 48.6,
+        "heavy_cream": 44.4,
+        "tomato": 0.6,
+        "onion": 0.15,
+        "garlic": 0.075,
+        "salt": 0.0,
+        "garam_masala": 0.5,
+        "chili_powder": 0.7000000000000001,
+        "vegetable_oil": 30.0,
+        "water": 0.0
+      },
+      "saturated_fat_g": {
+        "chicken_breast": 5.0,
+        "butter": 30.6,
+        "heavy_cream": 27.6,
+        "tomato": 0.0,
+        "onion": 0.0,
+        "garlic": 0.0,
+        "salt": 0.0,
+        "garam_masala": 0.15,
+        "chili_powder": 0.125,
+        "vegetable_oil": 4.2,
+        "water": 0.0
+      },
+      "carbs_g": {
+        "chicken_breast": 0.0,
+        "butter": 0.36,
+        "heavy_cream": 3.5999999999999996,
+        "tomato": 11.7,
+        "onion": 13.95,
+        "garlic": 4.95,
+        "salt": 0.0,
+        "garam_masala": 4.5,
+        "chili_powder": 2.5,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "sugar_g": {
+        "chicken_breast": 0.0,
+        "butter": 0.06,
+        "heavy_cream": 3.36,
+        "tomato": 7.8,
+        "onion": 6.300000000000001,
+        "garlic": 0.15,
+        "salt": 0.0,
+        "garam_masala": 0.4,
+        "chili_powder": 0.35000000000000003,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "fiber_g": {
+        "chicken_breast": 0.0,
+        "butter": 0.0,
+        "heavy_cream": 0.0,
+        "tomato": 3.6,
+        "onion": 2.5500000000000003,
+        "garlic": 0.315,
+        "salt": 0.0,
+        "garam_masala": 2.0,
+        "chili_powder": 1.7000000000000002,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "protein_g": {
+        "chicken_breast": 155.0,
+        "butter": 0.5399999999999999,
+        "heavy_cream": 2.52,
+        "tomato": 2.6999999999999997,
+        "onion": 1.65,
+        "garlic": 0.96,
+        "salt": 0.0,
+        "garam_masala": 1.1,
+        "chili_powder": 0.65,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "cholesterol_mg": {
+        "chicken_breast": 425.0,
+        "butter": 129.0,
+        "heavy_cream": 132.0,
+        "tomato": 0.0,
+        "onion": 0.0,
+        "garlic": 0.0,
+        "salt": 0.0,
+        "garam_masala": 0.0,
+        "chili_powder": 0.0,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      }
+    },
+    "chemicals": {
+      "sodium_mg": {
+        "chicken_breast": 370.0,
+        "butter": 385.79999999999995,
+        "heavy_cream": 45.6,
+        "tomato": 15.0,
+        "onion": 6.0,
+        "garlic": 2.5500000000000003,
+        "salt": 4656.0,
+        "garam_masala": 2.0,
+        "chili_powder": 13.049999999999999,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "msg_g": {
+        "chicken_breast": 0.0,
+        "butter": 0.0,
+        "heavy_cream": 0.0,
+        "tomato": 0.0,
+        "onion": 0.0,
+        "garlic": 0.0,
+        "salt": 0.0,
+        "garam_masala": 0.0,
+        "chili_powder": 0.0,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "sodium_benzoate_mg": {
+        "chicken_breast": 0.0,
+        "butter": 0.0,
+        "heavy_cream": 0.0,
+        "tomato": 0.0,
+        "onion": 0.0,
+        "garlic": 0.0,
+        "salt": 0.0,
+        "garam_masala": 0.0,
+        "chili_powder": 0.0,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "sodium_nitrite_mg": {
+        "chicken_breast": 0.0,
+        "butter": 0.0,
+        "heavy_cream": 0.0,
+        "tomato": 0.0,
+        "onion": 0.0,
+        "garlic": 0.0,
+        "salt": 0.0,
+        "garam_masala": 0.0,
+        "chili_powder": 0.0,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "tartrazine_mg": {
+        "chicken_breast": 0.0,
+        "butter": 0.0,
+        "heavy_cream": 0.0,
+        "tomato": 0.0,
+        "onion": 0.0,
+        "garlic": 0.0,
+        "salt": 0.0,
+        "garam_masala": 0.0,
+        "chili_powder": 0.0,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      },
+      "caffeine_mg": {
+        "chicken_breast": 0.0,
+        "butter": 0.0,
+        "heavy_cream": 0.0,
+        "tomato": 0.0,
+        "onion": 0.0,
+        "garlic": 0.0,
+        "salt": 0.0,
+        "garam_masala": 0.0,
+        "chili_powder": 0.0,
+        "vegetable_oil": 0.0,
+        "water": 0.0
+      }
+    }
+  },
+  "taste": {
+    "sweet": 20.55,
+    "salty": 27.95,
+    "umami": 42.0,
+    "richness": 123.0
+  },
+  "fingerprint": [
+    "acetoin",
+    "ajoene",
+    "allicin",
+    "beta_ionone",
+    "butyric_acid",
+    "capsaicin",
+    "carotenoids",
+    "caryophyllene",
+    "cinnamaldehyde",
+    "citric_acid",
+    "delta_decalactone",
+    "diacetyl",
+    "diallyl_disulfide",
+    "dihydrocapsaicin",
+    "dipropyl_disulfide",
+    "eugenol",
+    "glutamic_acid",
+    "hexanal",
+    "inosinic_acid",
+    "limonene",
+    "linalool",
+    "linoleic_acid",
+    "lycopene",
+    "oleic_acid",
+    "sodium_chloride",
+    "thiopropanal_s_oxide",
+    "vanillin"
+  ],
+  "unresolved_ingredients": [],
+  "warning_details": [],
+  "warnings": [],
+  "data_source": "placeholder",
+  "dish": "butter_chicken",
+  "display_name": "Butter chicken",
+  "servings": 4.0,
+  "tags": [
+    "curry",
+    "sauce"
+  ],
+  "ingredients": [
+    {
+      "name": "chicken_breast",
+      "display_name": "Chicken breast",
+      "grams": 500.0,
+      "role": "structural",
+      "is_core": true,
+      "nutrients": {
+        "calories_kcal": 782.0,
+        "fat_g": 18.0,
+        "saturated_fat_g": 5.0,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 155.0,
+        "cholesterol_mg": 425.0
+      },
+      "chemicals": {
+        "sodium_mg": 370.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "butter",
+      "display_name": "Butter",
+      "grams": 60.0,
+      "role": "fat_source",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 441.0,
+        "fat_g": 48.6,
+        "saturated_fat_g": 30.6,
+        "carbs_g": 0.36,
+        "sugar_g": 0.06,
+        "fiber_g": 0.0,
+        "protein_g": 0.54,
+        "cholesterol_mg": 129.0
+      },
+      "chemicals": {
+        "sodium_mg": 385.8,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "heavy_cream",
+      "display_name": "Heavy cream",
+      "grams": 120.0,
+      "role": "fat_source",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 424.08,
+        "fat_g": 44.4,
+        "saturated_fat_g": 27.6,
+        "carbs_g": 3.6,
+        "sugar_g": 3.36,
+        "fiber_g": 0.0,
+        "protein_g": 2.52,
+        "cholesterol_mg": 132.0
+      },
+      "chemicals": {
+        "sodium_mg": 45.6,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "tomato",
+      "display_name": "Tomato",
+      "grams": 300.0,
+      "role": "structural",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 63.0,
+        "fat_g": 0.6,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 11.7,
+        "sugar_g": 7.8,
+        "fiber_g": 3.6,
+        "protein_g": 2.7,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 15.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "onion",
+      "display_name": "Onion",
+      "grams": 150.0,
+      "role": "aromatic",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 63.75,
+        "fat_g": 0.15,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 13.95,
+        "sugar_g": 6.3,
+        "fiber_g": 2.55,
+        "protein_g": 1.65,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 6.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "garlic",
+      "display_name": "Garlic",
+      "grams": 15.0,
+      "role": "aromatic",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 24.32,
+        "fat_g": 0.07,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 4.95,
+        "sugar_g": 0.15,
+        "fiber_g": 0.32,
+        "protein_g": 0.96,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 2.55,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "salt",
+      "display_name": "Salt",
+      "grams": 12.0,
+      "role": "seasoning",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 0.0,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 4656.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "garam_masala",
+      "display_name": "Garam masala",
+      "grams": 10.0,
+      "role": "aromatic",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 26.9,
+        "fat_g": 0.5,
+        "saturated_fat_g": 0.15,
+        "carbs_g": 4.5,
+        "sugar_g": 0.4,
+        "fiber_g": 2.0,
+        "protein_g": 1.1,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 2.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "chili_powder",
+      "display_name": "Chili powder",
+      "grams": 5.0,
+      "role": "aromatic",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 18.9,
+        "fat_g": 0.7,
+        "saturated_fat_g": 0.12,
+        "carbs_g": 2.5,
+        "sugar_g": 0.35,
+        "fiber_g": 1.7,
+        "protein_g": 0.65,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 13.05,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "vegetable_oil",
+      "display_name": "Vegetable oil",
+      "grams": 30.0,
+      "role": "fat_source",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 270.0,
+        "fat_g": 30.0,
+        "saturated_fat_g": 4.2,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 0.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "water",
+      "display_name": "Water",
+      "grams": 100.0,
+      "role": "liquid",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 0.0,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 0.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    }
+  ],
+  "dv_pct": {
+    "nutrients": {
+      "calories_kcal": 26.4,
+      "fat_g": 45.8,
+      "saturated_fat_g": 84.6,
+      "carbs_g": 3.8,
+      "sugar_g": 9.2,
+      "fiber_g": 9.1,
+      "protein_g": 82.6,
+      "cholesterol_mg": 57.2
+    },
+    "chemicals": {
+      "sodium_mg": 59.7,
+      "msg_g": null,
+      "sodium_benzoate_mg": null,
+      "sodium_nitrite_mg": null,
+      "tartrazine_mg": null,
+      "caffeine_mg": 0.0
+    }
+  },
+  "daily_reference_label": "approx. % of daily reference",
+  "badges": [
+    "high-fat",
+    "high-saturated-fat",
+    "high-cholesterol",
+    "high-sodium"
+  ],
+  "modifiable": {
+    "ingredients": [
+      {
+        "name": "chicken_breast",
+        "display_name": "Chicken breast",
+        "grams": 500.0,
+        "role": "structural",
+        "is_core": true,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": "Changing a core ingredient can change the identity of this dish."
+      },
+      {
+        "name": "butter",
+        "display_name": "Butter",
+        "grams": 60.0,
+        "role": "fat_source",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "heavy_cream",
+        "display_name": "Heavy cream",
+        "grams": 120.0,
+        "role": "fat_source",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "tomato",
+        "display_name": "Tomato",
+        "grams": 300.0,
+        "role": "structural",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "onion",
+        "display_name": "Onion",
+        "grams": 150.0,
+        "role": "aromatic",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "garlic",
+        "display_name": "Garlic",
+        "grams": 15.0,
+        "role": "aromatic",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "salt",
+        "display_name": "Salt",
+        "grams": 12.0,
+        "role": "seasoning",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "garam_masala",
+        "display_name": "Garam masala",
+        "grams": 10.0,
+        "role": "aromatic",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "chili_powder",
+        "display_name": "Chili powder",
+        "grams": 5.0,
+        "role": "aromatic",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "vegetable_oil",
+        "display_name": "Vegetable oil",
+        "grams": 30.0,
+        "role": "fat_source",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "water",
+        "display_name": "Water",
+        "grams": 100.0,
+        "role": "liquid",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      }
+    ],
+    "nutrients": [
+      {
+        "id": "calories_kcal",
+        "label": "Calories",
+        "unit": "kcal",
+        "total": 2113.95,
+        "per_serving": 528.49,
+        "max_percent": 80,
+        "max_feasible_percent": 42,
+        "top_contributors": [
+          {
+            "ingredient": "chicken_breast",
+            "share_pct": 37.0
+          },
+          {
+            "ingredient": "butter",
+            "share_pct": 20.9
+          },
+          {
+            "ingredient": "heavy_cream",
+            "share_pct": 20.1
+          },
+          {
+            "ingredient": "vegetable_oil",
+            "share_pct": 12.8
+          },
+          {
+            "ingredient": "onion",
+            "share_pct": 3.0
+          },
+          {
+            "ingredient": "tomato",
+            "share_pct": 3.0
+          },
+          {
+            "ingredient": "garam_masala",
+            "share_pct": 1.3
+          },
+          {
+            "ingredient": "garlic",
+            "share_pct": 1.2
+          },
+          {
+            "ingredient": "chili_powder",
+            "share_pct": 0.9
+          }
+        ]
+      },
+      {
+        "id": "fat_g",
+        "label": "Fat",
+        "unit": "g",
+        "total": 143.03,
+        "per_serving": 35.76,
+        "max_percent": 80,
+        "max_feasible_percent": 68,
+        "top_contributors": [
+          {
+            "ingredient": "butter",
+            "share_pct": 34.0
+          },
+          {
+            "ingredient": "heavy_cream",
+            "share_pct": 31.0
+          },
+          {
+            "ingredient": "vegetable_oil",
+            "share_pct": 21.0
+          },
+          {
+            "ingredient": "chicken_breast",
+            "share_pct": 12.6
+          },
+          {
+            "ingredient": "chili_powder",
+            "share_pct": 0.5
+          },
+          {
+            "ingredient": "tomato",
+            "share_pct": 0.4
+          },
+          {
+            "ingredient": "garam_masala",
+            "share_pct": 0.3
+          },
+          {
+            "ingredient": "onion",
+            "share_pct": 0.1
+          },
+          {
+            "ingredient": "garlic",
+            "share_pct": 0.1
+          }
+        ]
+      },
+      {
+        "id": "saturated_fat_g",
+        "label": "Saturated fat",
+        "unit": "g",
+        "total": 67.67,
+        "per_serving": 16.92,
+        "max_percent": 80,
+        "max_feasible_percent": 73,
+        "top_contributors": [
+          {
+            "ingredient": "butter",
+            "share_pct": 45.2
+          },
+          {
+            "ingredient": "heavy_cream",
+            "share_pct": 40.8
+          },
+          {
+            "ingredient": "chicken_breast",
+            "share_pct": 7.4
+          },
+          {
+            "ingredient": "vegetable_oil",
+            "share_pct": 6.2
+          },
+          {
+            "ingredient": "garam_masala",
+            "share_pct": 0.2
+          },
+          {
+            "ingredient": "chili_powder",
+            "share_pct": 0.2
+          }
+        ]
+      },
+      {
+        "id": "carbs_g",
+        "label": "Carbohydrates",
+        "unit": "g",
+        "total": 41.56,
+        "per_serving": 10.39,
+        "max_percent": 80,
+        "max_feasible_percent": 6,
+        "top_contributors": [
+          {
+            "ingredient": "onion",
+            "share_pct": 33.6
+          },
+          {
+            "ingredient": "tomato",
+            "share_pct": 28.2
+          },
+          {
+            "ingredient": "garlic",
+            "share_pct": 11.9
+          },
+          {
+            "ingredient": "garam_masala",
+            "share_pct": 10.8
+          },
+          {
+            "ingredient": "heavy_cream",
+            "share_pct": 8.7
+          },
+          {
+            "ingredient": "chili_powder",
+            "share_pct": 6.0
+          },
+          {
+            "ingredient": "butter",
+            "share_pct": 0.9
+          }
+        ]
+      },
+      {
+        "id": "sugar_g",
+        "label": "Sugar",
+        "unit": "g",
+        "total": 18.42,
+        "per_serving": 4.61,
+        "max_percent": 80,
+        "max_feasible_percent": 14,
+        "top_contributors": [
+          {
+            "ingredient": "tomato",
+            "share_pct": 42.3
+          },
+          {
+            "ingredient": "onion",
+            "share_pct": 34.2
+          },
+          {
+            "ingredient": "heavy_cream",
+            "share_pct": 18.2
+          },
+          {
+            "ingredient": "garam_masala",
+            "share_pct": 2.2
+          },
+          {
+            "ingredient": "chili_powder",
+            "share_pct": 1.9
+          },
+          {
+            "ingredient": "garlic",
+            "share_pct": 0.8
+          },
+          {
+            "ingredient": "butter",
+            "share_pct": 0.3
+          }
+        ]
+      },
+      {
+        "id": "fiber_g",
+        "label": "Fiber",
+        "unit": "g",
+        "total": 10.17,
+        "per_serving": 2.54,
+        "max_percent": 80,
+        "max_feasible_percent": 0,
+        "top_contributors": [
+          {
+            "ingredient": "tomato",
+            "share_pct": 35.4
+          },
+          {
+            "ingredient": "onion",
+            "share_pct": 25.1
+          },
+          {
+            "ingredient": "garam_masala",
+            "share_pct": 19.7
+          },
+          {
+            "ingredient": "chili_powder",
+            "share_pct": 16.7
+          },
+          {
+            "ingredient": "garlic",
+            "share_pct": 3.1
+          }
+        ]
+      },
+      {
+        "id": "protein_g",
+        "label": "Protein",
+        "unit": "g",
+        "total": 165.12,
+        "per_serving": 41.28,
+        "max_percent": 80,
+        "max_feasible_percent": 0,
+        "top_contributors": [
+          {
+            "ingredient": "chicken_breast",
+            "share_pct": 93.9
+          },
+          {
+            "ingredient": "tomato",
+            "share_pct": 1.6
+          },
+          {
+            "ingredient": "heavy_cream",
+            "share_pct": 1.5
+          },
+          {
+            "ingredient": "onion",
+            "share_pct": 1.0
+          },
+          {
+            "ingredient": "garam_masala",
+            "share_pct": 0.7
+          },
+          {
+            "ingredient": "garlic",
+            "share_pct": 0.6
+          },
+          {
+            "ingredient": "chili_powder",
+            "share_pct": 0.4
+          },
+          {
+            "ingredient": "butter",
+            "share_pct": 0.3
+          }
+        ]
+      },
+      {
+        "id": "cholesterol_mg",
+        "label": "Cholesterol",
+        "unit": "mg",
+        "total": 686.0,
+        "per_serving": 171.5,
+        "max_percent": 80,
+        "max_feasible_percent": 30,
+        "top_contributors": [
+          {
+            "ingredient": "chicken_breast",
+            "share_pct": 62.0
+          },
+          {
+            "ingredient": "heavy_cream",
+            "share_pct": 19.2
+          },
+          {
+            "ingredient": "butter",
+            "share_pct": 18.8
+          }
+        ]
+      }
+    ],
+    "chemicals": [
+      {
+        "id": "sodium_mg",
+        "label": "Sodium",
+        "unit": "mg",
+        "total": 5496.0,
+        "per_serving": 1374.0,
+        "max_percent": 80,
+        "max_feasible_percent": 73,
+        "top_contributors": [
+          {
+            "ingredient": "salt",
+            "share_pct": 84.7
+          },
+          {
+            "ingredient": "butter",
+            "share_pct": 7.0
+          },
+          {
+            "ingredient": "chicken_breast",
+            "share_pct": 6.7
+          },
+          {
+            "ingredient": "heavy_cream",
+            "share_pct": 0.8
+          },
+          {
+            "ingredient": "tomato",
+            "share_pct": 0.3
+          },
+          {
+            "ingredient": "chili_powder",
+            "share_pct": 0.2
+          },
+          {
+            "ingredient": "onion",
+            "share_pct": 0.1
+          },
+          {
+            "ingredient": "garlic",
+            "share_pct": 0.0
+          },
+          {
+            "ingredient": "garam_masala",
+            "share_pct": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

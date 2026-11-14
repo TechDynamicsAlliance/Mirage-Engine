@@ -1,0 +1,9 @@
+[
+  {
+    "error": {
+      "code": "DISH_NOT_FOUND",
+      "message": "Dish 'not_a_dish' not found.",
+      "field": "dish"
+    }
+  }
+]

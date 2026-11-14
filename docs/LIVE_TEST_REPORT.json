@@ -1,0 +1,97 @@
+{
+  "tested_at": "2026-11-14T20:13:27.377059+00:00",
+  "status": "passed",
+  "recipe_id": "54264",
+  "title": "Coconut Rice",
+  "selection": "Previously selected by authenticated RecipeDB recipeofday",
+  "test_mode": "HTTP replay of saved actual RecipeDB and FlavorDB responses; no fresh upstream requests",
+  "ingredients": 8,
+  "linked_flavor_profiles": 8,
+  "missing_gram_weights": 8,
+  "new_upstream_requests": 0,
+  "assertions": [
+    "30% olive oil reduction: 1 to 0.7 tbsp",
+    "Stacked salt and oil edits",
+    "Almond removal",
+    "Legacy salt reduction",
+    "No invented nutrition or taste scores",
+    "Unsupported nutrient cut returns DATA_UNAVAILABLE",
+    "Determinism",
+    "Input immutability",
+    "Finite JSON"
+  ],
+  "http_checks": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/meta",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/dishes",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/recipes/54264",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/analyze",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/reformulate",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/reformulate",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/reformulate",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/reformulate",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/reformulate",
+      "expected_status": 200,
+      "actual_status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/reformulate",
+      "expected_status": 422,
+      "actual_status": 422
+    },
+    {
+      "method": "GET",
+      "path": "/api/dishes/lemonade",
+      "expected_status": 404,
+      "actual_status": 404
+    }
+  ]
+}

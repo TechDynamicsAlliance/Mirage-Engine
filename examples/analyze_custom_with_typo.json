@@ -1,0 +1,423 @@
+{
+  "recipe": {
+    "dish": "My lemonade",
+    "name": "My lemonade",
+    "servings": 1.0,
+    "tags": [],
+    "ingredients": {
+      "sugra": 20.0,
+      "lemon_juice": 100.0,
+      "water": 500.0
+    },
+    "core_ingredients": [],
+    "unresolved_ingredients": [
+      {
+        "name": "sugra",
+        "suggestions": [
+          "sugar",
+          "garam_masala"
+        ]
+      }
+    ]
+  },
+  "totals": {
+    "nutrients": {
+      "calories_kcal": 31.0,
+      "fat_g": 0.2,
+      "saturated_fat_g": 0.0,
+      "carbs_g": 6.9,
+      "sugar_g": 2.5,
+      "fiber_g": 0.3,
+      "protein_g": 0.4,
+      "cholesterol_mg": 0.0
+    },
+    "chemicals": {
+      "sodium_mg": 1.0,
+      "msg_g": 0.0,
+      "sodium_benzoate_mg": 0.0,
+      "sodium_nitrite_mg": 0.0,
+      "tartrazine_mg": 0.0,
+      "caffeine_mg": 0.0
+    }
+  },
+  "per_serving": {
+    "nutrients": {
+      "calories_kcal": 31.0,
+      "fat_g": 0.2,
+      "saturated_fat_g": 0.0,
+      "carbs_g": 6.9,
+      "sugar_g": 2.5,
+      "fiber_g": 0.3,
+      "protein_g": 0.4,
+      "cholesterol_mg": 0.0
+    },
+    "chemicals": {
+      "sodium_mg": 1.0,
+      "msg_g": 0.0,
+      "sodium_benzoate_mg": 0.0,
+      "sodium_nitrite_mg": 0.0,
+      "tartrazine_mg": 0.0,
+      "caffeine_mg": 0.0
+    }
+  },
+  "contributions": {
+    "nutrients": {
+      "calories_kcal": {
+        "sugra": 0.0,
+        "lemon_juice": 31.0,
+        "water": 0.0
+      },
+      "fat_g": {
+        "sugra": 0.0,
+        "lemon_juice": 0.2,
+        "water": 0.0
+      },
+      "saturated_fat_g": {
+        "sugra": 0.0,
+        "lemon_juice": 0.0,
+        "water": 0.0
+      },
+      "carbs_g": {
+        "sugra": 0.0,
+        "lemon_juice": 6.9,
+        "water": 0.0
+      },
+      "sugar_g": {
+        "sugra": 0.0,
+        "lemon_juice": 2.5,
+        "water": 0.0
+      },
+      "fiber_g": {
+        "sugra": 0.0,
+        "lemon_juice": 0.3,
+        "water": 0.0
+      },
+      "protein_g": {
+        "sugra": 0.0,
+        "lemon_juice": 0.4,
+        "water": 0.0
+      },
+      "cholesterol_mg": {
+        "sugra": 0.0,
+        "lemon_juice": 0.0,
+        "water": 0.0
+      }
+    },
+    "chemicals": {
+      "sodium_mg": {
+        "sugra": 0.0,
+        "lemon_juice": 1.0,
+        "water": 0.0
+      },
+      "msg_g": {
+        "sugra": 0.0,
+        "lemon_juice": 0.0,
+        "water": 0.0
+      },
+      "sodium_benzoate_mg": {
+        "sugra": 0.0,
+        "lemon_juice": 0.0,
+        "water": 0.0
+      },
+      "sodium_nitrite_mg": {
+        "sugra": 0.0,
+        "lemon_juice": 0.0,
+        "water": 0.0
+      },
+      "tartrazine_mg": {
+        "sugra": 0.0,
+        "lemon_juice": 0.0,
+        "water": 0.0
+      },
+      "caffeine_mg": {
+        "sugra": 0.0,
+        "lemon_juice": 0.0,
+        "water": 0.0
+      }
+    }
+  },
+  "taste": {
+    "sweet": 2.5,
+    "salty": 0.0,
+    "umami": 0.0,
+    "richness": 0.0
+  },
+  "fingerprint": [
+    "citral",
+    "citric_acid",
+    "limonene",
+    "linalool"
+  ],
+  "unresolved_ingredients": [
+    {
+      "name": "sugra",
+      "suggestions": [
+        "sugar",
+        "garam_masala"
+      ]
+    }
+  ],
+  "warning_details": [
+    {
+      "code": "UNKNOWN_INGREDIENT",
+      "severity": "caution",
+      "message": "Unknown ingredient 'sugra': its nutrition is not included in these numbers.",
+      "related": [
+        "sugra"
+      ]
+    }
+  ],
+  "warnings": [
+    "Unknown ingredient 'sugra': its nutrition is not included in these numbers."
+  ],
+  "data_source": "placeholder",
+  "dish": "My lemonade",
+  "display_name": "My lemonade",
+  "servings": 1.0,
+  "tags": [],
+  "ingredients": [
+    {
+      "name": "sugra",
+      "display_name": "sugra",
+      "grams": 20.0,
+      "role": "unknown",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 0.0,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 0.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "lemon_juice",
+      "display_name": "Lemon juice",
+      "grams": 100.0,
+      "role": "liquid",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 31.0,
+        "fat_g": 0.2,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 6.9,
+        "sugar_g": 2.5,
+        "fiber_g": 0.3,
+        "protein_g": 0.4,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 1.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    },
+    {
+      "name": "water",
+      "display_name": "Water",
+      "grams": 500.0,
+      "role": "liquid",
+      "is_core": false,
+      "nutrients": {
+        "calories_kcal": 0.0,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals": {
+        "sodium_mg": 0.0,
+        "msg_g": 0.0,
+        "sodium_benzoate_mg": 0.0,
+        "sodium_nitrite_mg": 0.0,
+        "tartrazine_mg": 0.0,
+        "caffeine_mg": 0.0
+      }
+    }
+  ],
+  "dv_pct": {
+    "nutrients": {
+      "calories_kcal": 1.6,
+      "fat_g": 0.3,
+      "saturated_fat_g": 0.0,
+      "carbs_g": 2.5,
+      "sugar_g": 5.0,
+      "fiber_g": 1.1,
+      "protein_g": 0.8,
+      "cholesterol_mg": 0.0
+    },
+    "chemicals": {
+      "sodium_mg": 0.0,
+      "msg_g": null,
+      "sodium_benzoate_mg": null,
+      "sodium_nitrite_mg": null,
+      "tartrazine_mg": null,
+      "caffeine_mg": 0.0
+    }
+  },
+  "daily_reference_label": "approx. % of daily reference",
+  "badges": [],
+  "modifiable": {
+    "ingredients": [
+      {
+        "name": "sugra",
+        "display_name": "sugra",
+        "grams": 20.0,
+        "role": "unknown",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "lemon_juice",
+        "display_name": "Lemon juice",
+        "grams": 100.0,
+        "role": "liquid",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      },
+      {
+        "name": "water",
+        "display_name": "Water",
+        "grams": 500.0,
+        "role": "liquid",
+        "is_core": false,
+        "can_reduce": true,
+        "can_remove": true,
+        "max_percent": 99,
+        "note": null
+      }
+    ],
+    "nutrients": [
+      {
+        "id": "calories_kcal",
+        "label": "Calories",
+        "unit": "kcal",
+        "total": 31.0,
+        "per_serving": 31.0,
+        "max_percent": 80,
+        "max_feasible_percent": 80,
+        "top_contributors": [
+          {
+            "ingredient": "lemon_juice",
+            "share_pct": 100.0
+          }
+        ]
+      },
+      {
+        "id": "fat_g",
+        "label": "Fat",
+        "unit": "g",
+        "total": 0.2,
+        "per_serving": 0.2,
+        "max_percent": 80,
+        "max_feasible_percent": 80,
+        "top_contributors": [
+          {
+            "ingredient": "lemon_juice",
+            "share_pct": 100.0
+          }
+        ]
+      },
+      {
+        "id": "carbs_g",
+        "label": "Carbohydrates",
+        "unit": "g",
+        "total": 6.9,
+        "per_serving": 6.9,
+        "max_percent": 80,
+        "max_feasible_percent": 80,
+        "top_contributors": [
+          {
+            "ingredient": "lemon_juice",
+            "share_pct": 100.0
+          }
+        ]
+      },
+      {
+        "id": "sugar_g",
+        "label": "Sugar",
+        "unit": "g",
+        "total": 2.5,
+        "per_serving": 2.5,
+        "max_percent": 80,
+        "max_feasible_percent": 80,
+        "top_contributors": [
+          {
+            "ingredient": "lemon_juice",
+            "share_pct": 100.0
+          }
+        ]
+      },
+      {
+        "id": "fiber_g",
+        "label": "Fiber",
+        "unit": "g",
+        "total": 0.3,
+        "per_serving": 0.3,
+        "max_percent": 80,
+        "max_feasible_percent": 80,
+        "top_contributors": [
+          {
+            "ingredient": "lemon_juice",
+            "share_pct": 100.0
+          }
+        ]
+      },
+      {
+        "id": "protein_g",
+        "label": "Protein",
+        "unit": "g",
+        "total": 0.4,
+        "per_serving": 0.4,
+        "max_percent": 80,
+        "max_feasible_percent": 80,
+        "top_contributors": [
+          {
+            "ingredient": "lemon_juice",
+            "share_pct": 100.0
+          }
+        ]
+      }
+    ],
+    "chemicals": [
+      {
+        "id": "sodium_mg",
+        "label": "Sodium",
+        "unit": "mg",
+        "total": 1.0,
+        "per_serving": 1.0,
+        "max_percent": 80,
+        "max_feasible_percent": 80,
+        "top_contributors": [
+          {
+            "ingredient": "lemon_juice",
+            "share_pct": 100.0
+          }
+        ]
+      }
+    ]
+  }
+}

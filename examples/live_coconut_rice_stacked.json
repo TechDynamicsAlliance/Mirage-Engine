@@ -1,0 +1,476 @@
+{
+  "schema_version": 2,
+  "analysis_status": "source_data_incomplete",
+  "dish": "recipedb_54264",
+  "recipe_id": "54264",
+  "recipe_name": "Coconut Rice",
+  "servings": 4.0,
+  "goal": null,
+  "reduce_percent": null,
+  "original_recipe": {
+    "ingredients": {
+      "olive_oil": null,
+      "rice": null,
+      "turmeric": null,
+      "salt": null,
+      "black_pepper": null,
+      "vegetable_stock": null,
+      "coconut_milk": null,
+      "almond": null
+    },
+    "tags": [],
+    "quantities": {
+      "olive_oil": {
+        "amount": 1.0,
+        "unit": "tbsp"
+      },
+      "rice": {
+        "amount": 1.0,
+        "unit": "cup"
+      },
+      "turmeric": {
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      "salt": {
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      "black_pepper": {
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      "vegetable_stock": {
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      "coconut_milk": {
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      "almond": {
+        "amount": 0.5,
+        "unit": "cup"
+      }
+    }
+  },
+  "new_recipe": {
+    "ingredients": {
+      "olive_oil": null,
+      "rice": null,
+      "turmeric": null,
+      "salt": null,
+      "black_pepper": null,
+      "vegetable_stock": null,
+      "coconut_milk": null,
+      "almond": null
+    },
+    "tags": [],
+    "quantities": {
+      "olive_oil": {
+        "amount": 0.7,
+        "unit": "tbsp"
+      },
+      "rice": {
+        "amount": 1.0,
+        "unit": "cup"
+      },
+      "turmeric": {
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      "salt": {
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      "black_pepper": {
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      "vegetable_stock": {
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      "coconut_milk": {
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      "almond": {
+        "amount": 0.5,
+        "unit": "cup"
+      }
+    }
+  },
+  "added_compensators": [],
+  "scores": {
+    "taste_retention_pct": null,
+    "target_reached": null,
+    "flavor_preserved_pct": 100.0,
+    "by_axis": {
+      "sweet": null,
+      "salty": null,
+      "umami": null,
+      "richness": null
+    }
+  },
+  "new_flavor_notes": [],
+  "lost_flavor_notes": [],
+  "flavor_note_identifier": "pubchem_id",
+  "modification_results": [
+    {
+      "id": "m1",
+      "type": "ingredient",
+      "target": "olive_oil",
+      "label": "olive oil",
+      "action": "reduce",
+      "requested_percent": 30.0,
+      "achieved_percent": 30.0,
+      "status": "met",
+      "unit": "tbsp",
+      "original_amount": 1.0,
+      "new_amount": 0.7,
+      "amount_basis": "reported_unit",
+      "affected_ingredients": [
+        {
+          "ingredient": "olive_oil",
+          "original_g": null,
+          "new_g": null
+        }
+      ],
+      "note": "Only the reported ingredient quantity is changed; nutrient and sensory changes are unknown."
+    },
+    {
+      "id": "m2",
+      "type": "ingredient",
+      "target": "salt",
+      "label": "salt",
+      "action": "reduce",
+      "requested_percent": 50.0,
+      "achieved_percent": 50.0,
+      "status": "met",
+      "unit": "tsp",
+      "original_amount": 0.5,
+      "new_amount": 0.25,
+      "amount_basis": "reported_unit",
+      "affected_ingredients": [
+        {
+          "ingredient": "salt",
+          "original_g": null,
+          "new_g": null
+        }
+      ],
+      "note": "Only the reported ingredient quantity is changed; nutrient and sensory changes are unknown."
+    }
+  ],
+  "ingredient_changes": [
+    {
+      "ingredient": "olive_oil",
+      "display_name": "olive oil",
+      "role": "unknown",
+      "status": "reduced",
+      "original_g": null,
+      "new_g": null,
+      "delta_g": null,
+      "delta_pct": -30.0,
+      "is_compensator": false,
+      "reason": "You requested this ingredient change.",
+      "modification_ids": [
+        "m1"
+      ],
+      "unit": "tbsp",
+      "original_quantity": 1.0,
+      "new_quantity": 0.7
+    },
+    {
+      "ingredient": "rice",
+      "display_name": "rice",
+      "role": "structural",
+      "status": "unchanged",
+      "original_g": null,
+      "new_g": null,
+      "delta_g": null,
+      "delta_pct": 0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": [],
+      "unit": "cup",
+      "original_quantity": 1.0,
+      "new_quantity": 1.0
+    },
+    {
+      "ingredient": "turmeric",
+      "display_name": "turmeric",
+      "role": "unknown",
+      "status": "unchanged",
+      "original_g": null,
+      "new_g": null,
+      "delta_g": null,
+      "delta_pct": 0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": [],
+      "unit": "tsp",
+      "original_quantity": 1.5,
+      "new_quantity": 1.5
+    },
+    {
+      "ingredient": "salt",
+      "display_name": "salt",
+      "role": "unknown",
+      "status": "reduced",
+      "original_g": null,
+      "new_g": null,
+      "delta_g": null,
+      "delta_pct": -50.0,
+      "is_compensator": false,
+      "reason": "You requested this ingredient change.",
+      "modification_ids": [
+        "m2"
+      ],
+      "unit": "tsp",
+      "original_quantity": 0.5,
+      "new_quantity": 0.25
+    },
+    {
+      "ingredient": "black_pepper",
+      "display_name": "black pepper",
+      "role": "unknown",
+      "status": "unchanged",
+      "original_g": null,
+      "new_g": null,
+      "delta_g": null,
+      "delta_pct": 0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": [],
+      "unit": "tsp",
+      "original_quantity": 0.25,
+      "new_quantity": 0.25
+    },
+    {
+      "ingredient": "vegetable_stock",
+      "display_name": "vegetable stock",
+      "role": "structural",
+      "status": "unchanged",
+      "original_g": null,
+      "new_g": null,
+      "delta_g": null,
+      "delta_pct": 0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": [],
+      "unit": "cup",
+      "original_quantity": 1.5,
+      "new_quantity": 1.5
+    },
+    {
+      "ingredient": "coconut_milk",
+      "display_name": "coconut milk",
+      "role": "unknown",
+      "status": "unchanged",
+      "original_g": null,
+      "new_g": null,
+      "delta_g": null,
+      "delta_pct": 0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": [],
+      "unit": "cup",
+      "original_quantity": 0.5,
+      "new_quantity": 0.5
+    },
+    {
+      "ingredient": "almond",
+      "display_name": "almond",
+      "role": "unknown",
+      "status": "unchanged",
+      "original_g": null,
+      "new_g": null,
+      "delta_g": null,
+      "delta_pct": 0,
+      "is_compensator": false,
+      "reason": "Kept at its original amount.",
+      "modification_ids": [],
+      "unit": "cup",
+      "original_quantity": 0.5,
+      "new_quantity": 0.5
+    }
+  ],
+  "nutrient_comparison": [],
+  "chemical_comparison": [],
+  "nutrition": {
+    "original": {
+      "sugar_g": null,
+      "sodium_mg": null,
+      "fat_g": 152.6359
+    },
+    "reformulated": {
+      "sugar_g": null,
+      "sodium_mg": null,
+      "fat_g": null
+    },
+    "sugar_saved_g": null,
+    "sodium_saved_mg": null,
+    "fat_saved_g": null
+  },
+  "reported_original_totals": {
+    "nutrients": {
+      "calories_kcal": 2092.9582,
+      "fat_g": 152.6359,
+      "saturated_fat_g": null,
+      "carbs_g": 167.833,
+      "sugar_g": null,
+      "fiber_g": null,
+      "protein_g": 16.9284,
+      "cholesterol_mg": null
+    },
+    "chemicals": {
+      "sodium_mg": null,
+      "msg_g": null,
+      "sodium_benzoate_mg": null,
+      "sodium_nitrite_mg": null,
+      "tartrazine_mg": null,
+      "caffeine_mg": null
+    }
+  },
+  "taste_profile": {
+    "axes": [
+      {
+        "axis": "sweet",
+        "label": "Sweet",
+        "original": null,
+        "after_cut": null,
+        "final": null,
+        "retention_pct": null,
+        "affected": null
+      },
+      {
+        "axis": "salty",
+        "label": "Salty",
+        "original": null,
+        "after_cut": null,
+        "final": null,
+        "retention_pct": null,
+        "affected": null
+      },
+      {
+        "axis": "umami",
+        "label": "Umami",
+        "original": null,
+        "after_cut": null,
+        "final": null,
+        "retention_pct": null,
+        "affected": null
+      },
+      {
+        "axis": "richness",
+        "label": "Richness",
+        "original": null,
+        "after_cut": null,
+        "final": null,
+        "retention_pct": null,
+        "affected": null
+      }
+    ],
+    "affected_axes": []
+  },
+  "headline": {
+    "summary_text": "Applied 2 ingredient edits in their reported units. Nutrition savings and taste retention are unavailable.",
+    "key_metrics": []
+  },
+  "warning_details": [
+    {
+      "code": "SOURCE_DATA_INCOMPLETE",
+      "severity": "caution",
+      "message": "RecipeDB ingredient nutrient densities and FlavorDB taste intensities are unavailable. Nutrient cuts and taste repair require those measurements.",
+      "related": [
+        "olive_oil",
+        "rice",
+        "turmeric",
+        "salt",
+        "black_pepper",
+        "vegetable_stock",
+        "coconut_milk",
+        "almond"
+      ]
+    }
+  ],
+  "warnings": [
+    "RecipeDB ingredient nutrient densities and FlavorDB taste intensities are unavailable. Nutrient cuts and taste repair require those measurements."
+  ],
+  "badges": {
+    "original": [],
+    "reformulated": []
+  },
+  "trace_detail": [
+    {
+      "phase": "baseline",
+      "text": "Using original RecipeDB quantities; no per-gram nutrition or taste strengths were supplied."
+    },
+    {
+      "phase": "modify",
+      "text": "m1: olive oil 1.0 \u2192 0.7 tbsp."
+    },
+    {
+      "phase": "modify",
+      "text": "m2: salt 0.5 \u2192 0.25 tsp."
+    },
+    {
+      "phase": "score",
+      "text": "Quantitative taste retention is unavailable; molecule presence does not measure taste intensity."
+    }
+  ],
+  "trace": [
+    "Using original RecipeDB quantities; no per-gram nutrition or taste strengths were supplied.",
+    "m1: olive oil 1.0 \u2192 0.7 tbsp.",
+    "m2: salt 0.5 \u2192 0.25 tsp.",
+    "Quantitative taste retention is unavailable; molecule presence does not measure taste intensity."
+  ],
+  "data_source": "recipedb+flavordb",
+  "data_quality": {
+    "data_source": "recipedb+flavordb",
+    "placeholder_values": false,
+    "unknown_ingredients": [],
+    "notes": [
+      "RecipeDB ingredient nutrient densities and FlavorDB taste intensities are unavailable. Nutrient cuts and taste repair require those measurements.",
+      "Household quantities are retained in their original units; missing gram weights are null.",
+      "FlavorDB identifies molecules, not their concentration, safety dose or sensory intensity."
+    ],
+    "missing_gram_weights": [
+      "olive_oil",
+      "rice",
+      "turmeric",
+      "salt",
+      "black_pepper",
+      "vegetable_stock",
+      "coconut_milk",
+      "almond"
+    ],
+    "missing_flavor_profiles": [],
+    "nutrition_basis": "recipe_level_values_as_reported_by_RecipeDB",
+    "ingredient_nutrition_available": false,
+    "quantitative_taste_available": false,
+    "source_issues": []
+  },
+  "source_metadata": {
+    "recipe_id": "54264",
+    "recipe_url": null,
+    "source": "Geniuskitchen",
+    "region": "Chinese and Mongolian",
+    "sub_region": "Chinese",
+    "prep_minutes": 0.0,
+    "cook_minutes": 0.0,
+    "total_minutes": 20.0,
+    "listed_calories": 382.6,
+    "instructions": [
+      "heat olive oil in medium saucepan over medium high heat . add uncooked rice , tumeric , salt , and pepper . stir rice occasionally until it is toasted and starts to smell nutty . add vegetable stock and coconut milk and stir well . bring to boil and then turn the heat down to maintain a simmer . cover and simmer for 15 minutes . remove rice from heat and stir in almonds . serve immediately ."
+    ],
+    "recipedb_endpoint": "https://api.foodoscope.com/recipe2-api/search-recipe/54264"
+  },
+  "options_used": {
+    "max_compensators": 3,
+    "exclude_compensators": [],
+    "servings": 4.0,
+    "include_trace": true
+  }
+}

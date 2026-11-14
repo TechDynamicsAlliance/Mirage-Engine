@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "DATA_UNAVAILABLE",
+    "message": "RecipeDB does not provide verified ingredient nutrient densities for this recipe; use an ingredient edit instead.",
+    "field": "modifications[0].target"
+  }
+}
