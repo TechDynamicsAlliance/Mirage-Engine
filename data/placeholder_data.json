@@ -1,253 +1,2127 @@
 {
   "meta": {
+    "schema_version": 2,
     "data_source": "placeholder",
-    "warning": "Every number and molecule list in this file is a stand-in. Replace with real FlavorDB data (Lesson 7). The output carries data_source: placeholder so nobody mistakes it for science."
+    "warning": "Every number in this file is an approximation from general nutrition knowledge (data_quality: placeholder_approx). It is not a lab measurement and not a citation. Daily values are rough FDA-style references [VERIFY]. Show them as approx. % of daily reference, not as a precise percent daily value. Calories are 4*protein + 4*carbs + 9*fat from the macros in this file.",
+    "notes": [
+      "[VERIFY] Nutrient daily values, and the 400 mg caffeine reference, are rough guides for the demo, not personal nutrition advice."
+    ]
+  },
+  "taste_axes": [
+    "sweet",
+    "salty",
+    "umami",
+    "richness"
+  ],
+  "nutrient_defs": [
+    {
+      "id": "calories_kcal",
+      "label": "Calories",
+      "unit": "kcal",
+      "direction": "lower_is_better",
+      "daily_value": 2000
+    },
+    {
+      "id": "fat_g",
+      "label": "Fat",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "daily_value": 78
+    },
+    {
+      "id": "saturated_fat_g",
+      "label": "Saturated fat",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "daily_value": 20
+    },
+    {
+      "id": "carbs_g",
+      "label": "Carbohydrates",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "daily_value": 275
+    },
+    {
+      "id": "sugar_g",
+      "label": "Sugar",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "daily_value": 50
+    },
+    {
+      "id": "fiber_g",
+      "label": "Fiber",
+      "unit": "g",
+      "direction": "higher_is_better",
+      "daily_value": 28
+    },
+    {
+      "id": "protein_g",
+      "label": "Protein",
+      "unit": "g",
+      "direction": "higher_is_better",
+      "daily_value": 50
+    },
+    {
+      "id": "cholesterol_mg",
+      "label": "Cholesterol",
+      "unit": "mg",
+      "direction": "lower_is_better",
+      "daily_value": 300
+    }
+  ],
+  "chemical_defs": [
+    {
+      "id": "sodium_mg",
+      "label": "Sodium",
+      "unit": "mg",
+      "direction": "lower_is_better",
+      "daily_value": 2300,
+      "group": null
+    },
+    {
+      "id": "msg_g",
+      "label": "MSG",
+      "unit": "g",
+      "direction": "lower_is_better",
+      "daily_value": null,
+      "group": null
+    },
+    {
+      "id": "sodium_benzoate_mg",
+      "label": "Sodium benzoate",
+      "unit": "mg",
+      "direction": "lower_is_better",
+      "daily_value": null,
+      "group": "preservatives"
+    },
+    {
+      "id": "sodium_nitrite_mg",
+      "label": "Sodium nitrite",
+      "unit": "mg",
+      "direction": "lower_is_better",
+      "daily_value": null,
+      "group": "preservatives"
+    },
+    {
+      "id": "tartrazine_mg",
+      "label": "Artificial yellow colour",
+      "unit": "mg",
+      "direction": "lower_is_better",
+      "daily_value": null,
+      "group": null
+    },
+    {
+      "id": "caffeine_mg",
+      "label": "Caffeine",
+      "unit": "mg",
+      "direction": "lower_is_better",
+      "daily_value": 400,
+      "group": null
+    }
+  ],
+  "mechanisms": {
+    "aroma_sweetness_enhancement": {
+      "label": "Aroma can suggest sweetness",
+      "plain_text": "Some aromatic compounds are reported to make a food taste sweeter without adding sugar."
+    },
+    "umami_synergy": {
+      "label": "Umami can stand in for saltiness",
+      "plain_text": "Glutamate-rich foods are reported to boost savory taste, which can make a dish seem saltier."
+    },
+    "acid_brightness": {
+      "label": "Acid can brighten flavor",
+      "plain_text": "A little acid is reported to brighten flavor so a dish needs less salt or sugar to taste vivid."
+    },
+    "emulsion_mouthfeel": {
+      "label": "An emulsion can restore creaminess",
+      "plain_text": "A smooth emulsion is reported to restore some of the creamy mouthfeel that fat usually provides."
+    },
+    "moisture_body": {
+      "label": "Moisture can restore body",
+      "plain_text": "Extra moisture and a softer texture are reported to bring back some of the body lost when fat is reduced."
+    },
+    "salt_substitute": {
+      "label": "A salt stand-in",
+      "plain_text": "Potassium chloride is reported to taste salty, with a bitter edge for some people."
+    }
   },
   "ingredients": {
     "sugar": {
-      "sweet_equiv_per_g": 1.0,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 1.0,
-      "sodium_mg_per_g": 0.0,
-      "fat_g_per_g": 0.0,
-      "molecules": ["sucrose", "glucose", "fructose"]
+      "display_name": "Sugar",
+      "aliases": [
+        "white_sugar",
+        "granulated_sugar"
+      ],
+      "category": "sweetener",
+      "role": "sweetener",
+      "nutrients_per_g": {
+        "calories_kcal": 4.0,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 1.0,
+        "sugar_g": 1.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {},
+      "taste_per_g": {
+        "sweet": 1.0,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "sucrose",
+        "glucose",
+        "fructose"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "salt": {
-      "sweet_equiv_per_g": 0.0,
-      "salty_equiv_per_g": 1.0,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 388.0,
-      "fat_g_per_g": 0.0,
-      "molecules": ["sodium_chloride"]
+      "display_name": "Salt",
+      "aliases": [
+        "table_salt"
+      ],
+      "category": "seasoning",
+      "role": "seasoning",
+      "nutrients_per_g": {
+        "calories_kcal": 0.0,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 388.0
+      },
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 1.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "sodium_chloride"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "butter": {
-      "sweet_equiv_per_g": 0.02,
-      "salty_equiv_per_g": 0.05,
-      "sugar_g_per_g": 0.001,
-      "sodium_mg_per_g": 6.43,
-      "fat_g_per_g": 0.81,
-      "molecules": ["diacetyl", "butyric_acid", "delta_decalactone", "acetoin"]
+      "display_name": "Butter",
+      "aliases": [
+        "unsalted_butter"
+      ],
+      "category": "dairy",
+      "role": "fat_source",
+      "nutrients_per_g": {
+        "calories_kcal": 7.35,
+        "fat_g": 0.81,
+        "saturated_fat_g": 0.51,
+        "carbs_g": 0.006,
+        "sugar_g": 0.001,
+        "fiber_g": 0.0,
+        "protein_g": 0.009,
+        "cholesterol_mg": 2.15
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 6.43
+      },
+      "taste_per_g": {
+        "sweet": 0.02,
+        "salty": 0.05,
+        "umami": 0.0,
+        "richness": 0.81
+      },
+      "molecules": [
+        "diacetyl",
+        "butyric_acid",
+        "delta_decalactone",
+        "acetoin"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "heavy_cream": {
-      "sweet_equiv_per_g": 0.03,
-      "salty_equiv_per_g": 0.01,
-      "sugar_g_per_g": 0.028,
-      "sodium_mg_per_g": 0.38,
-      "fat_g_per_g": 0.37,
-      "molecules": ["diacetyl", "delta_decalactone", "butyric_acid", "vanillin"]
+      "display_name": "Heavy cream",
+      "aliases": [
+        "cream",
+        "whipping_cream"
+      ],
+      "category": "dairy",
+      "role": "fat_source",
+      "nutrients_per_g": {
+        "calories_kcal": 3.534,
+        "fat_g": 0.37,
+        "saturated_fat_g": 0.23,
+        "carbs_g": 0.03,
+        "sugar_g": 0.028,
+        "fiber_g": 0.0,
+        "protein_g": 0.021,
+        "cholesterol_mg": 1.1
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.38
+      },
+      "taste_per_g": {
+        "sweet": 0.03,
+        "salty": 0.01,
+        "umami": 0.0,
+        "richness": 0.37
+      },
+      "molecules": [
+        "diacetyl",
+        "delta_decalactone",
+        "butyric_acid",
+        "vanillin"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "lemon_juice": {
-      "sweet_equiv_per_g": 0.025,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.025,
-      "sodium_mg_per_g": 0.01,
-      "fat_g_per_g": 0.002,
-      "molecules": ["limonene", "citral", "linalool", "citric_acid"]
+      "display_name": "Lemon juice",
+      "aliases": [
+        "lemon"
+      ],
+      "category": "fruit",
+      "role": "liquid",
+      "nutrients_per_g": {
+        "calories_kcal": 0.31,
+        "fat_g": 0.002,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.069,
+        "sugar_g": 0.025,
+        "fiber_g": 0.003,
+        "protein_g": 0.004,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.01
+      },
+      "taste_per_g": {
+        "sweet": 0.025,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "limonene",
+        "citral",
+        "linalool",
+        "citric_acid"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "tomato": {
-      "sweet_equiv_per_g": 0.03,
-      "salty_equiv_per_g": 0.005,
-      "sugar_g_per_g": 0.026,
-      "sodium_mg_per_g": 0.05,
-      "fat_g_per_g": 0.002,
-      "molecules": ["lycopene", "citric_acid", "glutamic_acid", "hexanal", "beta_ionone"]
+      "display_name": "Tomato",
+      "aliases": [
+        "fresh_tomato"
+      ],
+      "category": "vegetable",
+      "role": "structural",
+      "nutrients_per_g": {
+        "calories_kcal": 0.21,
+        "fat_g": 0.002,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.039,
+        "sugar_g": 0.026,
+        "fiber_g": 0.012,
+        "protein_g": 0.009,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.05
+      },
+      "taste_per_g": {
+        "sweet": 0.03,
+        "salty": 0.005,
+        "umami": 0.04,
+        "richness": 0.0
+      },
+      "molecules": [
+        "lycopene",
+        "citric_acid",
+        "glutamic_acid",
+        "hexanal",
+        "beta_ionone"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "onion": {
-      "sweet_equiv_per_g": 0.04,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.042,
-      "sodium_mg_per_g": 0.04,
-      "fat_g_per_g": 0.001,
-      "molecules": ["dipropyl_disulfide", "thiopropanal_s_oxide", "allicin"]
+      "display_name": "Onion",
+      "aliases": [
+        "onion_bulb"
+      ],
+      "category": "vegetable",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 0.425,
+        "fat_g": 0.001,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.093,
+        "sugar_g": 0.042,
+        "fiber_g": 0.017,
+        "protein_g": 0.011,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.04
+      },
+      "taste_per_g": {
+        "sweet": 0.04,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "dipropyl_disulfide",
+        "thiopropanal_s_oxide",
+        "allicin"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "garlic": {
-      "sweet_equiv_per_g": 0.01,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.01,
-      "sodium_mg_per_g": 0.17,
-      "fat_g_per_g": 0.005,
-      "molecules": ["allicin", "diallyl_disulfide", "ajoene"]
+      "display_name": "Garlic",
+      "aliases": [
+        "garlic_clove"
+      ],
+      "category": "vegetable",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 1.621,
+        "fat_g": 0.005,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.33,
+        "sugar_g": 0.01,
+        "fiber_g": 0.021,
+        "protein_g": 0.064,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.17
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "allicin",
+        "diallyl_disulfide",
+        "ajoene"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "chicken_breast": {
-      "sweet_equiv_per_g": 0.0,
-      "salty_equiv_per_g": 0.02,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.74,
-      "fat_g_per_g": 0.036,
-      "molecules": ["glutamic_acid", "inosinic_acid"]
+      "display_name": "Chicken breast",
+      "aliases": [
+        "chicken"
+      ],
+      "category": "protein",
+      "role": "structural",
+      "nutrients_per_g": {
+        "calories_kcal": 1.564,
+        "fat_g": 0.036,
+        "saturated_fat_g": 0.01,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.31,
+        "cholesterol_mg": 0.85
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.74
+      },
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.02,
+        "umami": 0.06,
+        "richness": 0.0
+      },
+      "molecules": [
+        "glutamic_acid",
+        "inosinic_acid"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "vegetable_oil": {
-      "sweet_equiv_per_g": 0.0,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.0,
-      "fat_g_per_g": 1.0,
-      "molecules": ["linoleic_acid", "oleic_acid"]
+      "display_name": "Vegetable oil",
+      "aliases": [
+        "oil",
+        "cooking_oil"
+      ],
+      "category": "oil",
+      "role": "fat_source",
+      "nutrients_per_g": {
+        "calories_kcal": 9.0,
+        "fat_g": 1.0,
+        "saturated_fat_g": 0.14,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {},
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 1.0
+      },
+      "molecules": [
+        "linoleic_acid",
+        "oleic_acid"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "garam_masala": {
-      "sweet_equiv_per_g": 0.05,
-      "salty_equiv_per_g": 0.02,
-      "sugar_g_per_g": 0.04,
-      "sodium_mg_per_g": 0.2,
-      "fat_g_per_g": 0.05,
-      "molecules": ["eugenol", "cinnamaldehyde", "caryophyllene", "limonene", "linalool"]
+      "display_name": "Garam masala",
+      "aliases": [
+        "garam"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 2.69,
+        "fat_g": 0.05,
+        "saturated_fat_g": 0.015,
+        "carbs_g": 0.45,
+        "sugar_g": 0.04,
+        "fiber_g": 0.2,
+        "protein_g": 0.11,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.2
+      },
+      "taste_per_g": {
+        "sweet": 0.05,
+        "salty": 0.02,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "eugenol",
+        "cinnamaldehyde",
+        "caryophyllene",
+        "limonene",
+        "linalool"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "chili_powder": {
-      "sweet_equiv_per_g": 0.02,
-      "salty_equiv_per_g": 0.01,
-      "sugar_g_per_g": 0.07,
-      "sodium_mg_per_g": 2.61,
-      "fat_g_per_g": 0.14,
-      "molecules": ["capsaicin", "dihydrocapsaicin", "carotenoids"]
+      "display_name": "Chili powder",
+      "aliases": [
+        "chilli_powder",
+        "red_chili_powder"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 3.78,
+        "fat_g": 0.14,
+        "saturated_fat_g": 0.025,
+        "carbs_g": 0.5,
+        "sugar_g": 0.07,
+        "fiber_g": 0.34,
+        "protein_g": 0.13,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 2.61
+      },
+      "taste_per_g": {
+        "sweet": 0.02,
+        "salty": 0.01,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "capsaicin",
+        "dihydrocapsaicin",
+        "carotenoids"
+      ],
+      "data_quality": "placeholder_approx"
     },
     "water": {
-      "sweet_equiv_per_g": 0.0,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.0,
-      "fat_g_per_g": 0.0,
-      "molecules": []
+      "display_name": "Water",
+      "aliases": [
+        "plain_water"
+      ],
+      "category": "liquid",
+      "role": "liquid",
+      "nutrients_per_g": {
+        "calories_kcal": 0.0,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {},
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [],
+      "data_quality": "placeholder_approx"
     },
     "green_bell_pepper": {
-      "sweet_equiv_per_g": 0.026,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.025,
-      "sodium_mg_per_g": 0.03,
-      "fat_g_per_g": 0.002,
-      "molecules": ["pyrazine", "linalool", "hexanal"]
+      "display_name": "Green bell pepper",
+      "aliases": [
+        "bell_pepper",
+        "capsicum"
+      ],
+      "category": "vegetable",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 0.238,
+        "fat_g": 0.002,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.046,
+        "sugar_g": 0.025,
+        "fiber_g": 0.017,
+        "protein_g": 0.009,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.03
+      },
+      "taste_per_g": {
+        "sweet": 0.026,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "pyrazine",
+        "linalool",
+        "hexanal"
+      ],
+      "data_quality": "placeholder_approx"
     },
-
     "vanilla_extract": {
-      "sweet_equiv_per_g": 2.0,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.09,
-      "fat_g_per_g": 0.001,
-      "molecules": ["vanillin", "guaiacol", "acetaldehyde", "linalool"],
-      "compensator_for": ["sweet"],
-      "fits": ["beverage", "dessert", "baking"],
-      "max_g": 3,
-      "caution": null
+      "display_name": "Vanilla extract",
+      "aliases": [
+        "vanilla",
+        "vanilla_essence"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 0.533,
+        "fat_g": 0.001,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.13,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.001,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.09
+      },
+      "taste_per_g": {
+        "sweet": 2.0,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "vanillin",
+        "guaiacol",
+        "acetaldehyde",
+        "linalool"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "sweet"
+        ],
+        "fits": [
+          "beverage",
+          "dessert",
+          "baking"
+        ],
+        "max_g": 3,
+        "mechanism": "aroma_sweetness_enhancement",
+        "caution": null
+      }
     },
     "cinnamon": {
-      "sweet_equiv_per_g": 1.2,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.1,
-      "fat_g_per_g": 0.01,
-      "molecules": ["cinnamaldehyde", "eugenol", "linalool", "coumarin"],
-      "compensator_for": ["sweet"],
-      "fits": ["dessert", "baking"],
-      "max_g": 3,
-      "caution": "Coumarin in cassia cinnamon may be a concern in large amounts."
+      "display_name": "Cinnamon",
+      "aliases": [
+        "cassia",
+        "cinnamon_powder"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 2.45,
+        "fat_g": 0.01,
+        "saturated_fat_g": 0.003,
+        "carbs_g": 0.55,
+        "sugar_g": 0.0,
+        "fiber_g": 0.53,
+        "protein_g": 0.04,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.1
+      },
+      "taste_per_g": {
+        "sweet": 1.2,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "cinnamaldehyde",
+        "eugenol",
+        "linalool",
+        "coumarin"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "sweet"
+        ],
+        "fits": [
+          "dessert",
+          "baking"
+        ],
+        "max_g": 3,
+        "mechanism": "aroma_sweetness_enhancement",
+        "caution": "Coumarin in cassia cinnamon may be a concern in large amounts."
+      }
     },
     "mint_leaves": {
-      "sweet_equiv_per_g": 0.5,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.3,
-      "fat_g_per_g": 0.007,
-      "molecules": ["menthol", "menthone", "limonene", "linalool"],
-      "compensator_for": ["sweet"],
-      "fits": ["beverage", "salad"],
-      "max_g": 5,
-      "caution": null
+      "display_name": "Mint leaves",
+      "aliases": [
+        "mint",
+        "pudina"
+      ],
+      "category": "herb",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 0.515,
+        "fat_g": 0.007,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.08,
+        "sugar_g": 0.0,
+        "fiber_g": 0.07,
+        "protein_g": 0.033,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.3
+      },
+      "taste_per_g": {
+        "sweet": 0.5,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "menthol",
+        "menthone",
+        "limonene",
+        "linalool"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "sweet"
+        ],
+        "fits": [
+          "beverage",
+          "salad"
+        ],
+        "max_g": 5,
+        "mechanism": "aroma_sweetness_enhancement",
+        "caution": null
+      }
     },
     "tomato_paste": {
-      "sweet_equiv_per_g": 0.1,
-      "salty_equiv_per_g": 0.3,
-      "sugar_g_per_g": 0.04,
-      "sodium_mg_per_g": 1.8,
-      "fat_g_per_g": 0.005,
-      "molecules": ["lycopene", "glutamic_acid", "citric_acid", "hexanal", "beta_ionone", "furaneol"],
-      "compensator_for": ["salty"],
-      "fits": ["soup", "sauce", "curry", "stew"],
-      "max_g": 20,
-      "caution": null
+      "display_name": "Tomato paste",
+      "aliases": [
+        "concentrated_tomato"
+      ],
+      "category": "vegetable",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 0.977,
+        "fat_g": 0.005,
+        "saturated_fat_g": 0.001,
+        "carbs_g": 0.19,
+        "sugar_g": 0.04,
+        "fiber_g": 0.04,
+        "protein_g": 0.043,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 1.8
+      },
+      "taste_per_g": {
+        "sweet": 0.1,
+        "salty": 0.3,
+        "umami": 0.45,
+        "richness": 0.0
+      },
+      "molecules": [
+        "lycopene",
+        "glutamic_acid",
+        "citric_acid",
+        "hexanal",
+        "beta_ionone",
+        "furaneol"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "salty",
+          "umami"
+        ],
+        "fits": [
+          "soup",
+          "sauce",
+          "curry",
+          "stew"
+        ],
+        "max_g": 20,
+        "mechanism": "umami_synergy",
+        "caution": null
+      }
     },
     "mushroom_powder": {
-      "sweet_equiv_per_g": 0.0,
-      "salty_equiv_per_g": 0.6,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.1,
-      "fat_g_per_g": 0.02,
-      "molecules": ["glutamic_acid", "guanylic_acid", "lenthionine", "1_octen_3_ol"],
-      "compensator_for": ["salty"],
-      "fits": ["soup", "sauce", "curry", "stew", "stir_fry"],
-      "max_g": 10,
-      "caution": null
+      "display_name": "Mushroom powder",
+      "aliases": [
+        "dried_mushroom_powder"
+      ],
+      "category": "vegetable",
+      "role": "seasoning",
+      "nutrients_per_g": {
+        "calories_kcal": 2.26,
+        "fat_g": 0.02,
+        "saturated_fat_g": 0.004,
+        "carbs_g": 0.3,
+        "sugar_g": 0.0,
+        "fiber_g": 0.12,
+        "protein_g": 0.22,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.1
+      },
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.6,
+        "umami": 0.8,
+        "richness": 0.0
+      },
+      "molecules": [
+        "glutamic_acid",
+        "guanylic_acid",
+        "lenthionine",
+        "1_octen_3_ol"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "salty",
+          "umami"
+        ],
+        "fits": [
+          "soup",
+          "sauce",
+          "curry",
+          "stew",
+          "stir_fry"
+        ],
+        "max_g": 10,
+        "mechanism": "umami_synergy",
+        "caution": null
+      }
     },
     "lemon_zest": {
-      "sweet_equiv_per_g": 0.1,
-      "salty_equiv_per_g": 0.15,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.06,
-      "fat_g_per_g": 0.003,
-      "molecules": ["limonene", "citral", "linalool", "geraniol", "citronellal"],
-      "compensator_for": ["salty", "sweet"],
-      "fits": ["beverage", "salad", "seafood", "sauce", "dessert"],
-      "max_g": 5,
-      "caution": null
+      "display_name": "Lemon zest",
+      "aliases": [
+        "zest",
+        "lemon_peel"
+      ],
+      "category": "fruit",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 0.727,
+        "fat_g": 0.003,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.16,
+        "sugar_g": 0.0,
+        "fiber_g": 0.11,
+        "protein_g": 0.015,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.06
+      },
+      "taste_per_g": {
+        "sweet": 0.1,
+        "salty": 0.15,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "limonene",
+        "citral",
+        "linalool",
+        "geraniol",
+        "citronellal"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "salty",
+          "sweet"
+        ],
+        "fits": [
+          "beverage",
+          "salad",
+          "seafood",
+          "sauce",
+          "dessert"
+        ],
+        "max_g": 5,
+        "mechanism": "acid_brightness",
+        "caution": null
+      }
     },
     "potassium_chloride": {
-      "sweet_equiv_per_g": 0.0,
-      "salty_equiv_per_g": 0.7,
-      "sugar_g_per_g": 0.0,
-      "sodium_mg_per_g": 0.0,
-      "fat_g_per_g": 0.0,
+      "display_name": "Potassium chloride",
+      "aliases": [
+        "kcl",
+        "salt_substitute"
+      ],
+      "category": "seasoning",
+      "role": "seasoning",
+      "nutrients_per_g": {
+        "calories_kcal": 0.0,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {},
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.7,
+        "umami": 0.0,
+        "richness": 0.0
+      },
       "molecules": [],
-      "compensator_for": ["salty"],
-      "fits": ["soup", "sauce", "curry", "stew", "baking", "stir_fry"],
-      "max_g": 3,
-      "caution": "Not suitable for people with kidney disease or on potassium-sparing medications."
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "salty"
+        ],
+        "fits": [
+          "soup",
+          "sauce",
+          "curry",
+          "stew",
+          "baking",
+          "stir_fry"
+        ],
+        "max_g": 3,
+        "mechanism": "salt_substitute",
+        "caution": "Not suitable for people with kidney disease or on potassium-sparing medications."
+      }
     },
     "yogurt": {
-      "sweet_equiv_per_g": 0.03,
-      "salty_equiv_per_g": 0.02,
-      "sugar_g_per_g": 0.035,
-      "sodium_mg_per_g": 0.46,
-      "fat_g_per_g": 0.033,
-      "molecules": ["diacetyl", "acetaldehyde", "lactic_acid", "acetoin"],
-      "compensator_for": ["fat"],
-      "fits": ["curry", "sauce", "dressing", "dessert", "beverage"],
-      "max_g": 50,
-      "caution": null
+      "display_name": "Yogurt",
+      "aliases": [
+        "plain_yogurt",
+        "dahi"
+      ],
+      "category": "dairy",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 0.625,
+        "fat_g": 0.033,
+        "saturated_fat_g": 0.021,
+        "carbs_g": 0.047,
+        "sugar_g": 0.035,
+        "fiber_g": 0.0,
+        "protein_g": 0.035,
+        "cholesterol_mg": 0.13
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.46
+      },
+      "taste_per_g": {
+        "sweet": 0.03,
+        "salty": 0.02,
+        "umami": 0.0,
+        "richness": 0.2
+      },
+      "molecules": [
+        "diacetyl",
+        "acetaldehyde",
+        "lactic_acid",
+        "acetoin"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "richness"
+        ],
+        "fits": [
+          "curry",
+          "sauce",
+          "dressing",
+          "dessert",
+          "beverage"
+        ],
+        "max_g": 50,
+        "mechanism": "emulsion_mouthfeel",
+        "caution": null
+      }
     },
     "applesauce": {
-      "sweet_equiv_per_g": 0.1,
-      "salty_equiv_per_g": 0.0,
-      "sugar_g_per_g": 0.1,
-      "sodium_mg_per_g": 0.02,
-      "fat_g_per_g": 0.001,
-      "molecules": ["ethyl_butyrate", "hexanal", "linalool"],
-      "compensator_for": ["fat"],
-      "fits": ["baking", "dessert"],
-      "max_g": 60,
-      "caution": null
+      "display_name": "Applesauce",
+      "aliases": [
+        "apple_sauce"
+      ],
+      "category": "fruit",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 0.577,
+        "fat_g": 0.001,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.14,
+        "sugar_g": 0.1,
+        "fiber_g": 0.012,
+        "protein_g": 0.002,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.02
+      },
+      "taste_per_g": {
+        "sweet": 0.1,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.15
+      },
+      "molecules": [
+        "ethyl_butyrate",
+        "hexanal",
+        "linalool"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "richness"
+        ],
+        "fits": [
+          "baking",
+          "dessert"
+        ],
+        "max_g": 60,
+        "mechanism": "moisture_body",
+        "caution": null
+      }
     },
     "stock_reduction": {
-      "sweet_equiv_per_g": 0.02,
-      "salty_equiv_per_g": 0.4,
-      "sugar_g_per_g": 0.005,
-      "sodium_mg_per_g": 3.5,
-      "fat_g_per_g": 0.01,
-      "molecules": ["glutamic_acid", "inosinic_acid", "guanylic_acid"],
-      "compensator_for": ["fat"],
-      "fits": ["soup", "sauce", "stew", "curry"],
-      "max_g": 30,
-      "caution": "Contains sodium; use low-sodium stock if reducing salt too."
+      "display_name": "Stock reduction",
+      "aliases": [
+        "reduced_stock"
+      ],
+      "category": "liquid",
+      "role": "liquid",
+      "nutrients_per_g": {
+        "calories_kcal": 0.37,
+        "fat_g": 0.01,
+        "saturated_fat_g": 0.003,
+        "carbs_g": 0.02,
+        "sugar_g": 0.005,
+        "fiber_g": 0.0,
+        "protein_g": 0.05,
+        "cholesterol_mg": 0.02
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 3.5
+      },
+      "taste_per_g": {
+        "sweet": 0.02,
+        "salty": 0.4,
+        "umami": 0.5,
+        "richness": 0.18
+      },
+      "molecules": [
+        "glutamic_acid",
+        "inosinic_acid",
+        "guanylic_acid"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "richness",
+          "umami"
+        ],
+        "fits": [
+          "soup",
+          "sauce",
+          "stew",
+          "curry"
+        ],
+        "max_g": 30,
+        "mechanism": "moisture_body",
+        "caution": "Contains sodium; use low-sodium stock if reducing salt too."
+      }
+    },
+    "flour": {
+      "display_name": "Flour",
+      "aliases": [
+        "all_purpose_flour",
+        "maida",
+        "wheat_flour"
+      ],
+      "category": "grain",
+      "role": "structural",
+      "nutrients_per_g": {
+        "calories_kcal": 3.53,
+        "fat_g": 0.01,
+        "saturated_fat_g": 0.002,
+        "carbs_g": 0.76,
+        "sugar_g": 0.003,
+        "fiber_g": 0.03,
+        "protein_g": 0.1,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.02
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "starch"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "cocoa_powder": {
+      "display_name": "Cocoa powder",
+      "aliases": [
+        "cocoa",
+        "unsweetened_cocoa"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 4.38,
+        "fat_g": 0.14,
+        "saturated_fat_g": 0.08,
+        "carbs_g": 0.58,
+        "sugar_g": 0.015,
+        "fiber_g": 0.33,
+        "protein_g": 0.2,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.21,
+        "caffeine_mg": 2.3
+      },
+      "taste_per_g": {
+        "sweet": 0.04,
+        "salty": 0.0,
+        "umami": 0.08,
+        "richness": 0.12
+      },
+      "molecules": [
+        "theobromine",
+        "caffeine",
+        "phenylacetaldehyde"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "egg": {
+      "display_name": "Egg",
+      "aliases": [
+        "whole_egg",
+        "chicken_egg"
+      ],
+      "category": "protein",
+      "role": "structural",
+      "nutrients_per_g": {
+        "calories_kcal": 1.46,
+        "fat_g": 0.1,
+        "saturated_fat_g": 0.03,
+        "carbs_g": 0.01,
+        "sugar_g": 0.01,
+        "fiber_g": 0.0,
+        "protein_g": 0.13,
+        "cholesterol_mg": 3.7
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 1.4
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.02,
+        "umami": 0.04,
+        "richness": 0.08
+      },
+      "molecules": [
+        "diacetyl"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "milk": {
+      "display_name": "Milk",
+      "aliases": [
+        "whole_milk"
+      ],
+      "category": "dairy",
+      "role": "liquid",
+      "nutrients_per_g": {
+        "calories_kcal": 0.621,
+        "fat_g": 0.033,
+        "saturated_fat_g": 0.02,
+        "carbs_g": 0.048,
+        "sugar_g": 0.048,
+        "fiber_g": 0.0,
+        "protein_g": 0.033,
+        "cholesterol_mg": 0.14
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.44
+      },
+      "taste_per_g": {
+        "sweet": 0.03,
+        "salty": 0.01,
+        "umami": 0.01,
+        "richness": 0.03
+      },
+      "molecules": [
+        "diacetyl",
+        "lactose"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "baking_powder": {
+      "display_name": "Baking powder",
+      "aliases": [
+        "leavening_powder"
+      ],
+      "category": "seasoning",
+      "role": "seasoning",
+      "nutrients_per_g": {
+        "calories_kcal": 1.12,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.28,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 90.0
+      },
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.05,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [],
+      "data_quality": "placeholder_approx"
+    },
+    "olive_oil": {
+      "display_name": "Olive oil",
+      "aliases": [
+        "extra_virgin_olive_oil"
+      ],
+      "category": "oil",
+      "role": "fat_source",
+      "nutrients_per_g": {
+        "calories_kcal": 9.0,
+        "fat_g": 1.0,
+        "saturated_fat_g": 0.14,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {},
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 1.0
+      },
+      "molecules": [
+        "oleic_acid",
+        "squalene"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "parmesan": {
+      "display_name": "Parmesan",
+      "aliases": [
+        "parmesan_cheese",
+        "parmigiano"
+      ],
+      "category": "dairy",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 3.9,
+        "fat_g": 0.26,
+        "saturated_fat_g": 0.16,
+        "carbs_g": 0.04,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.35,
+        "cholesterol_mg": 0.8
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 15.0
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.2,
+        "umami": 0.7,
+        "richness": 0.2
+      },
+      "molecules": [
+        "glutamic_acid",
+        "butyric_acid"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "umami"
+        ],
+        "fits": [
+          "salad",
+          "sauce",
+          "pasta",
+          "sandwich"
+        ],
+        "max_g": 15,
+        "mechanism": "umami_synergy",
+        "caution": null
+      }
+    },
+    "anchovy": {
+      "display_name": "Anchovy",
+      "aliases": [
+        "anchovy_fillet"
+      ],
+      "category": "protein",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 2.06,
+        "fat_g": 0.1,
+        "saturated_fat_g": 0.02,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.29,
+        "cholesterol_mg": 0.85
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 36.0
+      },
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.25,
+        "umami": 0.6,
+        "richness": 0.08
+      },
+      "molecules": [
+        "glutamic_acid",
+        "inosinic_acid"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "dijon_mustard": {
+      "display_name": "Dijon mustard",
+      "aliases": [
+        "mustard",
+        "dijon"
+      ],
+      "category": "condiment",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 0.72,
+        "fat_g": 0.04,
+        "saturated_fat_g": 0.002,
+        "carbs_g": 0.05,
+        "sugar_g": 0.02,
+        "fiber_g": 0.0,
+        "protein_g": 0.04,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 11.0
+      },
+      "taste_per_g": {
+        "sweet": 0.02,
+        "salty": 0.12,
+        "umami": 0.05,
+        "richness": 0.02
+      },
+      "molecules": [
+        "allyl_isothiocyanate"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "black_pepper": {
+      "display_name": "Black pepper",
+      "aliases": [
+        "ground_black_pepper",
+        "pepper"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 3.23,
+        "fat_g": 0.03,
+        "saturated_fat_g": 0.01,
+        "carbs_g": 0.64,
+        "sugar_g": 0.006,
+        "fiber_g": 0.25,
+        "protein_g": 0.1,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.2
+      },
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.02,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "piperine"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "bread": {
+      "display_name": "Bread",
+      "aliases": [
+        "white_bread",
+        "sandwich_bread"
+      ],
+      "category": "grain",
+      "role": "structural",
+      "nutrients_per_g": {
+        "calories_kcal": 2.59,
+        "fat_g": 0.03,
+        "saturated_fat_g": 0.007,
+        "carbs_g": 0.49,
+        "sugar_g": 0.05,
+        "fiber_g": 0.027,
+        "protein_g": 0.09,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 4.9
+      },
+      "taste_per_g": {
+        "sweet": 0.02,
+        "salty": 0.04,
+        "umami": 0.02,
+        "richness": 0.02
+      },
+      "molecules": [
+        "maltol"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "ham": {
+      "display_name": "Ham",
+      "aliases": [
+        "cooked_ham",
+        "ham_slice"
+      ],
+      "category": "protein",
+      "role": "structural",
+      "nutrients_per_g": {
+        "calories_kcal": 1.53,
+        "fat_g": 0.09,
+        "saturated_fat_g": 0.03,
+        "carbs_g": 0.02,
+        "sugar_g": 0.015,
+        "fiber_g": 0.0,
+        "protein_g": 0.16,
+        "cholesterol_mg": 0.55
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 12.0,
+        "sodium_nitrite_mg": 0.12
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.15,
+        "umami": 0.12,
+        "richness": 0.05
+      },
+      "molecules": [
+        "glutamic_acid"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "cheddar": {
+      "display_name": "Cheddar",
+      "aliases": [
+        "cheddar_cheese"
+      ],
+      "category": "dairy",
+      "role": "fat_source",
+      "nutrients_per_g": {
+        "calories_kcal": 3.97,
+        "fat_g": 0.33,
+        "saturated_fat_g": 0.21,
+        "carbs_g": 0.02,
+        "sugar_g": 0.005,
+        "fiber_g": 0.0,
+        "protein_g": 0.23,
+        "cholesterol_mg": 1.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 6.5
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.08,
+        "umami": 0.15,
+        "richness": 0.33
+      },
+      "molecules": [
+        "butyric_acid",
+        "diacetyl"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "instant_noodle_cake": {
+      "display_name": "Instant noodle cake",
+      "aliases": [
+        "ramen_cake",
+        "noodle_block"
+      ],
+      "category": "grain",
+      "role": "structural",
+      "nutrients_per_g": {
+        "calories_kcal": 4.32,
+        "fat_g": 0.16,
+        "saturated_fat_g": 0.07,
+        "carbs_g": 0.62,
+        "sugar_g": 0.02,
+        "fiber_g": 0.03,
+        "protein_g": 0.1,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 2.5
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.03,
+        "umami": 0.02,
+        "richness": 0.12
+      },
+      "molecules": [
+        "starch"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "seasoning_sachet": {
+      "display_name": "Seasoning sachet",
+      "aliases": [
+        "seasoning_packet",
+        "flavour_sachet"
+      ],
+      "category": "packaged",
+      "role": "seasoning",
+      "nutrients_per_g": {
+        "calories_kcal": 2.08,
+        "fat_g": 0.04,
+        "saturated_fat_g": 0.02,
+        "carbs_g": 0.35,
+        "sugar_g": 0.12,
+        "fiber_g": 0.02,
+        "protein_g": 0.08,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 180.0,
+        "msg_g": 0.2,
+        "sodium_benzoate_mg": 0.4,
+        "tartrazine_mg": 3.0
+      },
+      "taste_per_g": {
+        "sweet": 0.08,
+        "salty": 0.5,
+        "umami": 0.3,
+        "richness": 0.0
+      },
+      "molecules": [
+        "glutamic_acid"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "palm_oil": {
+      "display_name": "Palm oil",
+      "aliases": [
+        "palm_fat"
+      ],
+      "category": "oil",
+      "role": "fat_source",
+      "nutrients_per_g": {
+        "calories_kcal": 9.0,
+        "fat_g": 1.0,
+        "saturated_fat_g": 0.49,
+        "carbs_g": 0.0,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {},
+      "taste_per_g": {
+        "sweet": 0.0,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 1.0
+      },
+      "molecules": [
+        "palmitic_acid",
+        "oleic_acid"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "turmeric": {
+      "display_name": "Turmeric",
+      "aliases": [
+        "haldi",
+        "ground_turmeric"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 3.9,
+        "fat_g": 0.1,
+        "saturated_fat_g": 0.03,
+        "carbs_g": 0.67,
+        "sugar_g": 0.03,
+        "fiber_g": 0.21,
+        "protein_g": 0.08,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.38
+      },
+      "taste_per_g": {
+        "sweet": 0.02,
+        "salty": 0.01,
+        "umami": 0.02,
+        "richness": 0.0
+      },
+      "molecules": [
+        "curcumin"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "cumin": {
+      "display_name": "Cumin",
+      "aliases": [
+        "jeera",
+        "ground_cumin"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 4.46,
+        "fat_g": 0.22,
+        "saturated_fat_g": 0.015,
+        "carbs_g": 0.44,
+        "sugar_g": 0.02,
+        "fiber_g": 0.11,
+        "protein_g": 0.18,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 1.68
+      },
+      "taste_per_g": {
+        "sweet": 0.02,
+        "salty": 0.01,
+        "umami": 0.03,
+        "richness": 0.0
+      },
+      "molecules": [
+        "cuminaldehyde"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "coriander_powder": {
+      "display_name": "Coriander powder",
+      "aliases": [
+        "ground_coriander",
+        "dhania"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 4.3,
+        "fat_g": 0.18,
+        "saturated_fat_g": 0.01,
+        "carbs_g": 0.55,
+        "sugar_g": 0.0,
+        "fiber_g": 0.4,
+        "protein_g": 0.12,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.35
+      },
+      "taste_per_g": {
+        "sweet": 0.03,
+        "salty": 0.0,
+        "umami": 0.02,
+        "richness": 0.0
+      },
+      "molecules": [
+        "linalool"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "ginger": {
+      "display_name": "Ginger",
+      "aliases": [
+        "ginger_root",
+        "fresh_ginger"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 0.864,
+        "fat_g": 0.008,
+        "saturated_fat_g": 0.002,
+        "carbs_g": 0.18,
+        "sugar_g": 0.017,
+        "fiber_g": 0.02,
+        "protein_g": 0.018,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.13
+      },
+      "taste_per_g": {
+        "sweet": 0.03,
+        "salty": 0.0,
+        "umami": 0.01,
+        "richness": 0.0
+      },
+      "molecules": [
+        "gingerol",
+        "zingiberene"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "soy_sauce": {
+      "display_name": "Soy sauce",
+      "aliases": [
+        "soya_sauce",
+        "shoyu"
+      ],
+      "category": "condiment",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 0.529,
+        "fat_g": 0.001,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.05,
+        "sugar_g": 0.01,
+        "fiber_g": 0.0,
+        "protein_g": 0.08,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 55.0
+      },
+      "taste_per_g": {
+        "sweet": 0.04,
+        "salty": 0.5,
+        "umami": 0.55,
+        "richness": 0.01
+      },
+      "molecules": [
+        "glutamic_acid"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "umami",
+          "salty"
+        ],
+        "fits": [
+          "noodle",
+          "stir_fry",
+          "sandwich"
+        ],
+        "max_g": 10,
+        "mechanism": "umami_synergy",
+        "caution": "Very high in sodium, so it gives sodium back while it restores savoriness."
+      }
+    },
+    "honey": {
+      "display_name": "Honey",
+      "aliases": [
+        "liquid_honey"
+      ],
+      "category": "sweetener",
+      "role": "sweetener",
+      "nutrients_per_g": {
+        "calories_kcal": 3.292,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.82,
+        "sugar_g": 0.82,
+        "fiber_g": 0.0,
+        "protein_g": 0.003,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.04
+      },
+      "taste_per_g": {
+        "sweet": 0.85,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "fructose",
+        "glucose"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "egg_yolk": {
+      "display_name": "Egg yolk",
+      "aliases": [
+        "egg_yolks"
+      ],
+      "category": "protein",
+      "role": "fat_source",
+      "nutrients_per_g": {
+        "calories_kcal": 3.23,
+        "fat_g": 0.27,
+        "saturated_fat_g": 0.09,
+        "carbs_g": 0.04,
+        "sugar_g": 0.005,
+        "fiber_g": 0.0,
+        "protein_g": 0.16,
+        "cholesterol_mg": 10.8
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.48
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.02,
+        "umami": 0.05,
+        "richness": 0.27
+      },
+      "molecules": [
+        "diacetyl"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "cardamom": {
+      "display_name": "Cardamom",
+      "aliases": [
+        "elaichi",
+        "ground_cardamom"
+      ],
+      "category": "spice",
+      "role": "aromatic",
+      "nutrients_per_g": {
+        "calories_kcal": 3.79,
+        "fat_g": 0.07,
+        "saturated_fat_g": 0.01,
+        "carbs_g": 0.68,
+        "sugar_g": 0.0,
+        "fiber_g": 0.28,
+        "protein_g": 0.11,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.18
+      },
+      "taste_per_g": {
+        "sweet": 0.4,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "cineole",
+        "linalool",
+        "limonene"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "sweet"
+        ],
+        "fits": [
+          "dessert",
+          "baking",
+          "curry"
+        ],
+        "max_g": 2,
+        "mechanism": "aroma_sweetness_enhancement",
+        "caution": null
+      }
+    },
+    "nutritional_yeast": {
+      "display_name": "Nutritional yeast",
+      "aliases": [
+        "nooch"
+      ],
+      "category": "seasoning",
+      "role": "seasoning",
+      "nutrients_per_g": {
+        "calories_kcal": 3.85,
+        "fat_g": 0.05,
+        "saturated_fat_g": 0.01,
+        "carbs_g": 0.35,
+        "sugar_g": 0.0,
+        "fiber_g": 0.2,
+        "protein_g": 0.5,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 2.0
+      },
+      "taste_per_g": {
+        "sweet": 0.05,
+        "salty": 0.05,
+        "umami": 0.55,
+        "richness": 0.02
+      },
+      "molecules": [
+        "glutamic_acid"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "umami"
+        ],
+        "fits": [
+          "sauce",
+          "pasta",
+          "salad",
+          "sandwich"
+        ],
+        "max_g": 10,
+        "mechanism": "umami_synergy",
+        "caution": null
+      }
+    },
+    "silken_tofu": {
+      "display_name": "Silken tofu",
+      "aliases": [
+        "soft_tofu",
+        "silken_bean_curd"
+      ],
+      "category": "protein",
+      "role": "structural",
+      "nutrients_per_g": {
+        "calories_kcal": 0.505,
+        "fat_g": 0.025,
+        "saturated_fat_g": 0.005,
+        "carbs_g": 0.02,
+        "sugar_g": 0.005,
+        "fiber_g": 0.0,
+        "protein_g": 0.05,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.12
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.01,
+        "umami": 0.03,
+        "richness": 0.12
+      },
+      "molecules": [],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "richness"
+        ],
+        "fits": [
+          "curry",
+          "soup",
+          "sauce",
+          "dressing"
+        ],
+        "max_g": 80,
+        "mechanism": "emulsion_mouthfeel",
+        "caution": null
+      }
+    },
+    "miso": {
+      "display_name": "Miso",
+      "aliases": [
+        "miso_paste"
+      ],
+      "category": "condiment",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 2.02,
+        "fat_g": 0.06,
+        "saturated_fat_g": 0.01,
+        "carbs_g": 0.25,
+        "sugar_g": 0.06,
+        "fiber_g": 0.05,
+        "protein_g": 0.12,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 37.0
+      },
+      "taste_per_g": {
+        "sweet": 0.05,
+        "salty": 0.4,
+        "umami": 0.65,
+        "richness": 0.04
+      },
+      "molecules": [
+        "glutamic_acid"
+      ],
+      "data_quality": "placeholder_approx",
+      "compensator": {
+        "compensates": [
+          "umami"
+        ],
+        "fits": [
+          "soup",
+          "stew",
+          "sauce"
+        ],
+        "max_g": 15,
+        "mechanism": "umami_synergy",
+        "caution": "High in sodium, so it gives sodium back while it restores savoriness."
+      }
+    },
+    "cornstarch": {
+      "display_name": "Cornstarch",
+      "aliases": [
+        "cornflour"
+      ],
+      "category": "grain",
+      "role": "thickener",
+      "nutrients_per_g": {
+        "calories_kcal": 3.661,
+        "fat_g": 0.001,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.91,
+        "sugar_g": 0.0,
+        "fiber_g": 0.0,
+        "protein_g": 0.003,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.09
+      },
+      "taste_per_g": {
+        "sweet": 0.01,
+        "salty": 0.0,
+        "umami": 0.0,
+        "richness": 0.0
+      },
+      "molecules": [
+        "starch"
+      ],
+      "data_quality": "placeholder_approx"
+    },
+    "vinegar": {
+      "display_name": "Vinegar",
+      "aliases": [
+        "white_vinegar"
+      ],
+      "category": "condiment",
+      "role": "condiment",
+      "nutrients_per_g": {
+        "calories_kcal": 0.016,
+        "fat_g": 0.0,
+        "saturated_fat_g": 0.0,
+        "carbs_g": 0.004,
+        "sugar_g": 0.004,
+        "fiber_g": 0.0,
+        "protein_g": 0.0,
+        "cholesterol_mg": 0.0
+      },
+      "chemicals_per_g": {
+        "sodium_mg": 0.02
+      },
+      "taste_per_g": {
+        "sweet": 0.005,
+        "salty": 0.0,
+        "umami": 0.01,
+        "richness": 0.0
+      },
+      "molecules": [
+        "acetic_acid"
+      ],
+      "data_quality": "placeholder_approx"
     }
   },
   "dishes": {
     "lemonade": {
+      "display_name": "Lemonade",
+      "servings": 4,
+      "tags": [
+        "beverage"
+      ],
       "ingredients": {
         "sugar": 50,
         "lemon_juice": 100,
         "water": 500
       },
-      "tags": ["beverage"]
+      "core_ingredients": [
+        "lemon_juice"
+      ]
     },
     "tomato_soup": {
+      "display_name": "Tomato soup",
+      "servings": 4,
+      "tags": [
+        "soup",
+        "sauce"
+      ],
       "ingredients": {
         "tomato": 400,
         "onion": 100,
@@ -257,9 +2131,17 @@
         "heavy_cream": 50,
         "water": 500
       },
-      "tags": ["soup", "sauce"]
+      "core_ingredients": [
+        "tomato"
+      ]
     },
     "butter_chicken": {
+      "display_name": "Butter chicken",
+      "servings": 4,
+      "tags": [
+        "curry",
+        "sauce"
+      ],
       "ingredients": {
         "chicken_breast": 500,
         "butter": 60,
@@ -273,7 +2155,115 @@
         "vegetable_oil": 30,
         "water": 100
       },
-      "tags": ["curry", "sauce"]
+      "core_ingredients": [
+        "chicken_breast"
+      ]
+    },
+    "chicken_curry": {
+      "display_name": "Chicken curry",
+      "servings": 4,
+      "tags": [
+        "curry",
+        "stew"
+      ],
+      "ingredients": {
+        "chicken_breast": 450,
+        "onion": 150,
+        "tomato": 200,
+        "garlic": 12,
+        "ginger": 15,
+        "vegetable_oil": 25,
+        "salt": 8,
+        "turmeric": 3,
+        "cumin": 3,
+        "coriander_powder": 3,
+        "chili_powder": 4,
+        "water": 250
+      },
+      "core_ingredients": [
+        "chicken_breast"
+      ]
+    },
+    "chocolate_cake": {
+      "display_name": "Chocolate cake",
+      "servings": 8,
+      "tags": [
+        "dessert",
+        "baking"
+      ],
+      "ingredients": {
+        "flour": 180,
+        "sugar": 150,
+        "cocoa_powder": 40,
+        "butter": 100,
+        "egg": 100,
+        "milk": 120,
+        "baking_powder": 6,
+        "salt": 2
+      },
+      "core_ingredients": [
+        "flour",
+        "cocoa_powder"
+      ]
+    },
+    "caesar_dressing": {
+      "display_name": "Caesar dressing",
+      "servings": 4,
+      "tags": [
+        "salad",
+        "dressing"
+      ],
+      "ingredients": {
+        "olive_oil": 80,
+        "egg_yolk": 30,
+        "parmesan": 30,
+        "lemon_juice": 20,
+        "garlic": 4,
+        "anchovy": 10,
+        "dijon_mustard": 8,
+        "salt": 2,
+        "black_pepper": 1
+      },
+      "core_ingredients": [
+        "parmesan",
+        "anchovy"
+      ]
+    },
+    "instant_noodles": {
+      "display_name": "Instant noodles",
+      "servings": 1,
+      "tags": [
+        "noodle",
+        "packaged"
+      ],
+      "ingredients": {
+        "instant_noodle_cake": 75,
+        "seasoning_sachet": 8,
+        "palm_oil": 4,
+        "water": 400
+      },
+      "core_ingredients": [
+        "instant_noodle_cake"
+      ]
+    },
+    "ham_cheese_sandwich": {
+      "display_name": "Ham and cheese sandwich",
+      "servings": 1,
+      "tags": [
+        "sandwich",
+        "bread"
+      ],
+      "ingredients": {
+        "bread": 80,
+        "ham": 50,
+        "cheddar": 30,
+        "butter": 8,
+        "dijon_mustard": 8
+      },
+      "core_ingredients": [
+        "bread",
+        "ham"
+      ]
     }
   }
 }

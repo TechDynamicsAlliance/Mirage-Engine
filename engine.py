@@ -44,6 +44,76 @@ def load_data(path: str | Path = None) -> dict:
         return json.load(f)
 
 
+# ── Reading schema v2 (the old flat keys still work as a fallback) ──
+# Goal code still says "sweet_equiv_per_g". The data file now stores that
+# number at taste_per_g.sweet. These helpers hide that move so the math
+# above them does not change.
+_TASTE_FIELD_TO_AXIS = {
+    "sweet_equiv_per_g": "sweet",
+    "salty_equiv_per_g": "salty",
+}
+
+
+def _taste_value(ing: dict | None, taste_field: str) -> float:
+    """Read one taste-per-gram number.
+
+    Schema v2 keeps the old sweet/salty figures under taste_per_g so a
+    sugar or salt goal still sees the same boost it did before.
+    """
+    if not ing or not taste_field:
+        return 0.0
+    if "taste_per_g" in ing:
+        axis = _TASTE_FIELD_TO_AXIS.get(taste_field, taste_field)
+        return ing["taste_per_g"].get(axis, 0.0)
+    return ing.get(taste_field, 0.0)
+
+
+def _nutrient_value(ing: dict | None, key: str) -> float:
+    """Read sugar or fat per gram.
+
+    Missing keys mean 0, both in the nested block and in the old flat file.
+    """
+    old_keys = {"sugar_g": "sugar_g_per_g", "fat_g": "fat_g_per_g"}
+    if not ing:
+        return 0.0
+    if "nutrients_per_g" in ing:
+        return ing["nutrients_per_g"].get(key, 0.0)
+    return ing.get(old_keys[key], 0.0)
+
+
+def _sodium_value(ing: dict | None) -> float:
+    """Read sodium in mg per gram. Missing means 0."""
+    if not ing:
+        return 0.0
+    if "chemicals_per_g" in ing:
+        return ing["chemicals_per_g"].get("sodium_mg", 0.0)
+    return ing.get("sodium_mg_per_g", 0.0)
+
+
+def _compensator_block(ing: dict) -> dict | None:
+    """Return compensator rules, or None when the ingredient is not one.
+
+    Schema v2 uses a nested block. The old file used compensator_for / fits / max_g.
+    Fat was renamed to the richness axis; both names are accepted.
+    """
+    if "compensator" in ing:
+        block = ing["compensator"]
+        return {
+            "compensates": list(block.get("compensates", [])),
+            "fits": list(block.get("fits", [])),
+            "max_g": block.get("max_g", 5),
+            "caution": block.get("caution"),
+        }
+    if "compensator_for" in ing:
+        return {
+            "compensates": list(ing.get("compensator_for", [])),
+            "fits": list(ing.get("fits", [])),
+            "max_g": ing.get("max_g", 5),
+            "caution": ing.get("caution"),
+        }
+    return None
+
+
 # ── Helper functions ────────────────────────────────────────────────
 def fingerprint(ingredients: dict[str, float], data: dict) -> set[str]:
     """Set of all flavor molecules across a recipe's ingredients."""
@@ -56,26 +126,33 @@ def fingerprint(ingredients: dict[str, float], data: dict) -> set[str]:
 
 
 def perceived_taste(ingredients: dict[str, float], taste_field: str, data: dict) -> float:
-    """Sum of (grams × taste-equivalent-per-gram) across all ingredients."""
+    """Sum of (grams × taste-equivalent-per-gram) across all ingredients.
+
+    This is the "how sweet / salty does it taste" number the deficit uses.
+    """
     total = 0.0
     for name, grams in ingredients.items():
         ing = data["ingredients"].get(name)
         if ing:
-            total += grams * ing.get(taste_field, 0.0)
+            total += grams * _taste_value(ing, taste_field)
     return total
 
 
 def totals(ingredients: dict[str, float], data: dict) -> dict[str, float]:
-    """Compute actual sugar (g), sodium (mg), and fat (g) totals."""
+    """Compute actual sugar (g), sodium (mg), and fat (g) totals.
+
+    Only these three are returned today because the legacy response shows
+    them. Rounding to 2 decimals happens here, at the edge of that response.
+    """
     sugar_g = 0.0
     sodium_mg = 0.0
     fat_g = 0.0
     for name, grams in ingredients.items():
         ing = data["ingredients"].get(name)
         if ing:
-            sugar_g += grams * ing.get("sugar_g_per_g", 0.0)
-            sodium_mg += grams * ing.get("sodium_mg_per_g", 0.0)
-            fat_g += grams * ing.get("fat_g_per_g", 0.0)
+            sugar_g += grams * _nutrient_value(ing, "sugar_g")
+            sodium_mg += grams * _sodium_value(ing)
+            fat_g += grams * _nutrient_value(ing, "fat_g")
     return {"sugar_g": round(sugar_g, 2), "sodium_mg": round(sodium_mg, 2), "fat_g": round(fat_g, 2)}
 
 
@@ -93,20 +170,25 @@ def rank_compensators(
     """
     candidates = []
     for name, info in data["ingredients"].items():
-        if "compensator_for" not in info:
+        comp = _compensator_block(info)
+        if comp is None:
             continue
-        # Must compensate for the right taste
+        # Must compensate for the right taste.
+        # Schema v2 calls the old "fat" axis "richness".
         goal_taste = "sweet" if taste_field == "sweet_equiv_per_g" else "salty" if taste_field == "salty_equiv_per_g" else "fat"
-        if goal_taste not in info["compensator_for"]:
+        accepted = {goal_taste}
+        if goal_taste == "fat":
+            accepted.add("richness")
+        if not any(item in accepted for item in comp["compensates"]):
             continue
         # Must fit the dish's tags
-        if not any(t in info.get("fits", []) for t in dish_tags):
+        if not any(t in comp["fits"] for t in dish_tags):
             continue
         # Must not already be in the recipe
         if name in current_ingredients:
             continue
 
-        power = info.get(taste_field, 0.0) if taste_field else 0.5  # fat compensators get a baseline
+        power = _taste_value(info, taste_field) if taste_field else 0.5  # fat compensators get a baseline
         cand_molecules = set(info.get("molecules", []))
         if cand_molecules:
             overlap = len(cand_molecules & dish_molecules) / len(cand_molecules)
@@ -183,7 +265,7 @@ def reformulate(
         fat_sources = []
         for name, grams in new_ingredients.items():
             ing = data["ingredients"].get(name, {})
-            fat_per_g = ing.get("fat_g_per_g", 0.0)
+            fat_per_g = _nutrient_value(ing, "fat_g")
             if fat_per_g > 0.1:  # only meaningful fat sources
                 fat_sources.append((name, grams, fat_per_g))
         for name, grams, _ in fat_sources:
@@ -212,8 +294,9 @@ def reformulate(
             for name, score, info in candidates:
                 if deficit <= 0 or len(added_compensators) >= 3:
                     break
-                max_g = info.get("max_g", 5)
-                power = info.get(taste_field, 0.0)
+                comp = _compensator_block(info) or {}
+                max_g = comp.get("max_g", 5)
+                power = _taste_value(info, taste_field)
                 if power <= 0:
                     continue
                 # How many grams do we need?
@@ -235,9 +318,10 @@ def reformulate(
                     "molecule_overlap": round(overlap, 2),
                     "score": round(score, 3),
                 }
-                if info.get("caution"):
-                    comp_entry["caution"] = info["caution"]
-                    warnings.append(f"{name}: {info['caution']}")
+                caution = comp.get("caution")
+                if caution:
+                    comp_entry["caution"] = caution
+                    warnings.append(f"{name}: {caution}")
 
                 added_compensators.append(comp_entry)
                 trace.append(f"Added {name}: {actual_g}g (+{boost:.1f} taste, {overlap:.0%} molecule overlap)")
