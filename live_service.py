@@ -165,6 +165,8 @@ def analyze_live(record: dict, definitions: dict) -> dict:
                 "nutrition_basis": "unavailable" if user_source else "recipe_level_values_as_reported_by_RecipeDB", "ingredient_nutrition_available": False,
                 "quantitative_taste_available": False, "source_issues": deepcopy(record.get("source_issues", []))},
             "source_metadata": {"recipe_id": None if user_source else str(source["Recipe_id"]), "recipe_url": source.get("url"), "source": source.get("Source"),
+                                "image_url": next((value for key in ("image_url", "Recipe_image", "recipe_image", "img_url", "image")
+                                                   if isinstance((value := source.get(key)), str) and value.lower().startswith(("https://", "http://"))), None),
                                 "region": source.get("Region"), "sub_region": source.get("Sub_region"),
                                 "prep_minutes": _number(source.get("prep_time")), "cook_minutes": _number(source.get("cook_time")),
                                 "total_minutes": _number(source.get("total_time")), "listed_calories": _number(source.get("Calories")),

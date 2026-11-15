@@ -91,7 +91,8 @@ def get_dishes():
                        "baseline": {f"{key}_per_serving": detail["per_serving"][group][key]
                                     for group, key in (("nutrients", "calories_kcal"), ("chemicals", "sodium_mg"),
                                                        ("nutrients", "sugar_g"), ("nutrients", "fat_g"))},
-                       "data_source": detail["data_source"], "data_quality": detail["data_quality"]})
+                       "data_source": detail["data_source"], "data_quality": detail["data_quality"],
+                       "image_url": detail["source_metadata"].get("image_url")})
     return result
 
 

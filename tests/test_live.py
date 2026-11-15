@@ -42,6 +42,19 @@ def test_live_analysis_never_treats_missing_amounts_as_zero(record, definitions)
     assert detail["modifiable"]["nutrients"] == []
 
 
+@pytest.mark.parametrize("image,expected", [("https://example.com/recipe.jpg", "https://example.com/recipe.jpg"),
+                                            ("javascript:alert(1)", None), (None, None)])
+def test_optional_recipe_image_reaches_detail_and_collection(record, definitions, monkeypatch, image, expected):
+    """Display source photos when supplied, while keeping absent/invalid images optional."""
+    record["payload"]["data"]["recipe"]["Recipe_image"] = image
+    definitions["dishes"]["recipedb_999"] = record
+    monkeypatch.setattr(main, "DATA", definitions)
+    client = TestClient(main.app)
+    detail = client.get("/api/dishes/recipedb_999").json()
+    assert detail["source_metadata"]["image_url"] == expected
+    assert client.get("/api/dishes").json()[0]["image_url"] == expected
+
+
 def test_live_edits_use_actual_units_and_have_no_fabricated_scores(record, definitions):
     """Cut a tablespoon quantity exactly and retain null nutrition and taste predictions."""
     before = deepcopy(record)
